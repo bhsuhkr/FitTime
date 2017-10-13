@@ -15,7 +15,6 @@ public class MainActivity extends AppCompatActivity {
     private BottomNavigationView mBottomNavigationItem;
     private Fragment fragment;
     private FragmentManager fragmentManager;
-    private CalendarFragment pFragment;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,8 +26,6 @@ public class MainActivity extends AppCompatActivity {
         fragmentManager = getSupportFragmentManager();
         FragmentTransaction transaction = fragmentManager.beginTransaction();
         transaction.replace(R.id.main_container, fragment).commit();
-
-        pFragment = new CalendarFragment();
 
         mBottomNavigationItem = (BottomNavigationView) findViewById(R.id.bottom_navigation);
         mBottomNavigationItem.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {

@@ -1,0 +1,7 @@
+COMMAND=PREDEX_LIBRARY
+FILE_PATH=C:\Project\git\FiTime\.android\build-cache\52a3a0d65d2a258ae041df1f90c35b65015ff28f\output\jars\classes.jar
+FILE_HASH=fa0446a14ed5dd3725047d6399ffea771a564b30
+BUILD_TOOLS_REVISION=25.0.2
+JUMBO_MODE=true
+OPTIMIZE=true
+MULTI_DEX=true
