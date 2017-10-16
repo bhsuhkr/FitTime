@@ -10,7 +10,7 @@
         android:theme="@style/AppTheme">
 
         <activity
-            android:name="com.example.bohyun.fitime.MainActivity"
+            android:name="com.example.bohyun.fitime.LoginActivity"
             android:label="FiTime"
             android:uiOptions="splitActionBarWhenNarrow">
 
@@ -26,6 +26,8 @@
             android:name="com.example.bohyun.fitime.Settings"
             >
         </activity>
+        <activity android:name=".MainActivity"/>
+
 
     </application>
 

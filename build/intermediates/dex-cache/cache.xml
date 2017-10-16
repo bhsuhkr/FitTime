@@ -3,12 +3,30 @@
 
     <item
         is-multidex="true"
-        jar="C:\Project\git\FiTime\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jar="C:\Project\git\FiTime\.android\build-cache\439bb16f20c7fd6a1332bbb22375ba0fb84256d0\output\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="ea0131e1b2acd4ee535d9e5fbcd3e3b0c9b06935">
-        <dex dex="C:\Project\git\FiTime\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_99e1d4af3f1d713fe1b7ed678d9ccc0c80a48491\classes.dex" />
+        sha1="8fe8a8f77d651982ce5e18f6187dc4daf914ac57">
+        <dex dex="C:\Project\git\FiTime\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_775fd3820c5346861eb9eb35117d94528fbdc4c6\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Project\git\FiTime\.android\build-cache\d3fa498e96fe9aad4e038050bfb5740a6d7305f0\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="702d339bc0a81d21354cd7e2cf2b67225fa4a16c">
+        <dex dex="C:\Project\git\FiTime\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_78ed122d30ca2a7874ef0e0ce93f6dc2b8e9454f\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Project\git\FiTime\.android\build-cache\bab9abaf715e9dd19d7a92db4015104bb7862f88\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="cb454b52545859ed2f24a6c01366805b0fa04b22">
+        <dex dex="C:\Project\git\FiTime\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_2f8031da698c846f2da8b15248b3fd2c2a4cff63\classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -18,6 +36,105 @@
         revision="25.0.2"
         sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
         <dex dex="C:\Project\git\FiTime\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_f4497792bf856835c1888d9bc05dbc75cd2dcb48\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Project\git\FiTime\.android\build-cache\3c39bc40f4d1d06be8970df720bff8ea53a21c52\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="67eb33110dbacb46a48175b08ae0c96761d2c17d">
+        <dex dex="C:\Project\git\FiTime\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_c2108cc694bdad8e006a7cc12cbe114b6b674b4d\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\SDK\extras\android\m2repository\com\android\support\support-annotations\25.2.0\support-annotations-25.2.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="4a5a82a027706397fff621b22fd6fa796e91d7c5">
+        <dex dex="C:\Project\git\FiTime\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-25.2.0_991140b613c6e52cb7666404f85c73ec3a1a5f05\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Project\git\FiTime\.android\build-cache\52a3a0d65d2a258ae041df1f90c35b65015ff28f\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="fa0446a14ed5dd3725047d6399ffea771a564b30">
+        <dex dex="C:\Project\git\FiTime\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_d701aa4a3cb83d71a12bdfc5766107c4b385176b\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Project\git\FiTime\.android\build-cache\0446bef87ca7c6568ef622fee309d378cbefa8d6\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="810f41e5b7fd99f196ebeabe865ba2c54e7e76dc">
+        <dex dex="C:\Project\git\FiTime\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_356ab7d4b700ac526a323c01c4065176b4cfde04\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Project\git\FiTime\.android\build-cache\f1a37dd515a12c6c12d74346d3c2eb536afb762e\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="26384be22ddc74cfe197ebda9edbc7d1fd8bd537">
+        <dex dex="C:\Project\git\FiTime\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_bdd3005cbd039ff3decc66986fe7bd9909f0b442\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Project\git\FiTime\.android\build-cache\0bf562a05f5e95d22e94e52a694b19ef7cc97c86\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="e820b7be8c035dd522da4bc822e8a76c8e27921a">
+        <dex dex="C:\Project\git\FiTime\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_9af87d771784e9622fa02aebe5c8bbd7606faaa2\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Project\git\FiTime\.android\build-cache\47bcca6aaa5f3ac2f3d808a66a3ab399fc1253cc\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="5e497d60f0cb6ce87c458ac5420a46d0fed49bd0">
+        <dex dex="C:\Project\git\FiTime\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_953dc608699728125627b1ce0fe1056bea7b877c\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Project\git\FiTime\.android\build-cache\0062318843c56418ad3a09e85b3a930ba752687b\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="0c6d948e6cb9ea6f535d175fb61ba2930719c0e9">
+        <dex dex="C:\Project\git\FiTime\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_4c99d8110259f84f88e565058202e08c09ef4404\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Project\git\FiTime\.android\build-cache\30d580810242e44a8a1947e5f7cd5245bb8ff453\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="C:\Project\git\FiTime\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_eda3d988962a650b3fe7a794fa3078e450bce063\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Project\git\FiTime\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="ade2e3fe19ceb230676a5bc76cac728478099b0d">
+        <dex dex="C:\Project\git\FiTime\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_99e1d4af3f1d713fe1b7ed678d9ccc0c80a48491\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Project\git\FiTime\.android\build-cache\a501ee03d04d667ed10580a59ec76991b527d5e5\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="ee394a892dd21c03a528139c1e8d4e0e1264ac84">
+        <dex dex="C:\Project\git\FiTime\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_7b1c2eb166e3923552b9188135ddceee24e7cd5d\classes.dex" />
     </item>
 
 </items>
