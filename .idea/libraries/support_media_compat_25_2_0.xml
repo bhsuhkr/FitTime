@@ -1,8 +1,8 @@
 <component name="libraryTable">
   <library name="support-media-compat-25.2.0">
     <CLASSES>
-      <root url="file://$PROJECT_DIR$/.android/build-cache/a501ee03d04d667ed10580a59ec76991b527d5e5/output/res" />
-      <root url="jar://$PROJECT_DIR$/.android/build-cache/a501ee03d04d667ed10580a59ec76991b527d5e5/output/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/../git/FiTime/.android/build-cache/a501ee03d04d667ed10580a59ec76991b527d5e5/output/res" />
+      <root url="jar://$PROJECT_DIR$/../git/FiTime/.android/build-cache/a501ee03d04d667ed10580a59ec76991b527d5e5/output/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
