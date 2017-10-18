@@ -1,8 +1,8 @@
 <component name="libraryTable">
   <library name="runner-0.5">
     <CLASSES>
-      <root url="file://$PROJECT_DIR$/.android/build-cache/308d55c6efc58ab9612b35408ace03570924c5c3/output/res" />
-      <root url="jar://$PROJECT_DIR$/.android/build-cache/308d55c6efc58ab9612b35408ace03570924c5c3/output/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/../git/FiTime/.android/build-cache/308d55c6efc58ab9612b35408ace03570924c5c3/output/res" />
+      <root url="jar://$PROJECT_DIR$/../git/FiTime/.android/build-cache/308d55c6efc58ab9612b35408ace03570924c5c3/output/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
