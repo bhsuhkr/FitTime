@@ -39,7 +39,7 @@ public class StartButtonActivity extends Activity {
                 videoView.start();
                 mp.setLooping(true);
             }
-        }); 
+        });
 
         bplay.setOnClickListener(new View.OnClickListener() {
             @Override
