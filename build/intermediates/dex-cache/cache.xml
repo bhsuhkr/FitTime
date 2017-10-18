@@ -3,156 +3,237 @@
 
     <item
         is-multidex="true"
-        jar="C:\Project\git\FiTime\.android\build-cache\439bb16f20c7fd6a1332bbb22375ba0fb84256d0\output\jars\classes.jar"
+        jar="C:\Users\zschr\.android\build-cache\f41feed8618ce34cc4a9cd423e1d9653bfa179ca\output\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="8fe8a8f77d651982ce5e18f6187dc4daf914ac57">
-        <dex dex="C:\Project\git\FiTime\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_775fd3820c5346861eb9eb35117d94528fbdc4c6\classes.dex" />
+        sha1="2d45b277afdf55bcfdc005c03c0c2f1733aaa1b0">
+        <dex dex="C:\Users\zschr\Desktop\test\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_ce5c54e7be140a4e6b1e3b8d173ffd25f9c5b652\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\zschr\.android\build-cache\f41feed8618ce34cc4a9cd423e1d9653bfa179ca\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="2d45b277afdf55bcfdc005c03c0c2f1733aaa1b0">
+        <dex dex="C:\Users\zschr\Desktop\test\app\build\intermediates\pre-dexed\debug\classes_ce5c54e7be140a4e6b1e3b8d173ffd25f9c5b652.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\zschr\.android\build-cache\ea3619a76790fa93d54f183b5462b060afa921d8\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="c2cadea4d8a1a5b5c4e5f0dc99a99a43774f5e6e">
+        <dex dex="C:\Users\zschr\Desktop\test\app\build\intermediates\pre-dexed\debug\classes_3da47bd843d4b86f8b949f6fa3cfd3c64c34a20c.jar" />
     </item>
     <item
         is-multidex="true"
-        jar="C:\Project\git\FiTime\.android\build-cache\d3fa498e96fe9aad4e038050bfb5740a6d7305f0\output\jars\classes.jar"
+        jar="C:\Users\zschr\.android\build-cache\df0b89b8334e900d87abc711d921d79b2b430990\output\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="702d339bc0a81d21354cd7e2cf2b67225fa4a16c">
-        <dex dex="C:\Project\git\FiTime\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_78ed122d30ca2a7874ef0e0ce93f6dc2b8e9454f\classes.dex" />
+        sha1="8040d53ecd4bd895360eafdc25e1c1cc9479e6aa">
+        <dex dex="C:\Users\zschr\Desktop\test\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_46ef15cad98d881ec399df44c1d4310d4480c540\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\zschr\.android\build-cache\a56c8cd67157c321dccc5ffb2deb4d6463b06ab7\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="52339832d252da4328c5ffcacbc205268346362a">
+        <dex dex="C:\Users\zschr\Desktop\test\app\build\intermediates\pre-dexed\debug\classes_03992c09075c1092aa0eab4a583c4c254763893e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\zschr\.android\build-cache\4885a61e37d81144867a638d55453d12b698aa64\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="5f519b8c692038a47ee404b6ea6b847f6402000c">
+        <dex dex="C:\Users\zschr\Desktop\test\app\build\intermediates\pre-dexed\debug\classes_488cb2f82f381bc73863ae4d616ad89a68539283.jar" />
     </item>
     <item
         is-multidex="true"
-        jar="C:\Project\git\FiTime\.android\build-cache\bab9abaf715e9dd19d7a92db4015104bb7862f88\output\jars\classes.jar"
+        jar="C:\Users\zschr\.android\build-cache\ea3619a76790fa93d54f183b5462b060afa921d8\output\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="cb454b52545859ed2f24a6c01366805b0fa04b22">
-        <dex dex="C:\Project\git\FiTime\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_2f8031da698c846f2da8b15248b3fd2c2a4cff63\classes.dex" />
+        sha1="c2cadea4d8a1a5b5c4e5f0dc99a99a43774f5e6e">
+        <dex dex="C:\Users\zschr\Desktop\test\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_3da47bd843d4b86f8b949f6fa3cfd3c64c34a20c\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\zschr\.android\build-cache\df0b89b8334e900d87abc711d921d79b2b430990\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="8040d53ecd4bd895360eafdc25e1c1cc9479e6aa">
+        <dex dex="C:\Users\zschr\Desktop\test\app\build\intermediates\pre-dexed\debug\classes_46ef15cad98d881ec399df44c1d4310d4480c540.jar" />
     </item>
     <item
         is-multidex="true"
-        jar="C:\Project\git\FiTime\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jar="C:\Users\zschr\.android\build-cache\4885a61e37d81144867a638d55453d12b698aa64\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="5f519b8c692038a47ee404b6ea6b847f6402000c">
+        <dex dex="C:\Users\zschr\Desktop\test\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_488cb2f82f381bc73863ae4d616ad89a68539283\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\zschr\.android\build-cache\a56c8cd67157c321dccc5ffb2deb4d6463b06ab7\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="52339832d252da4328c5ffcacbc205268346362a">
+        <dex dex="C:\Users\zschr\Desktop\test\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_03992c09075c1092aa0eab4a583c4c254763893e\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\zschr\.android\build-cache\778382f4b33e3c82a844f4db75489e54c3690e20\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="3e1185bdde08224bf1275f6b4f9771df5e738e1b">
+        <dex dex="C:\Users\zschr\Desktop\test\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_20fd26cff5cd573fcecd201ed4db27eababa925a\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\zschr\.android\build-cache\778382f4b33e3c82a844f4db75489e54c3690e20\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="3e1185bdde08224bf1275f6b4f9771df5e738e1b">
+        <dex dex="C:\Users\zschr\Desktop\test\app\build\intermediates\pre-dexed\debug\classes_20fd26cff5cd573fcecd201ed4db27eababa925a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\zschr\.android\build-cache\c0f5590b2cda7209c0324a243c274b8cb6a19bd2\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="20d6aa9a18ea9833cd2bee95dff7cd303cdb80e4">
+        <dex dex="C:\Users\zschr\Desktop\test\app\build\intermediates\pre-dexed\debug\classes_fe916b6e7b18219344e1efebf9cb69a6e64985b4.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\zschr\.android\build-cache\17edcf8cf544a39c8e5171563d12eea4e3c38552\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="73c80b05a390e8319d1ef7a236739cd610c8f774">
+        <dex dex="C:\Users\zschr\Desktop\test\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_59060dd5321c0282d727e744c776b7d00426dadf\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\zschr\.android\build-cache\17edcf8cf544a39c8e5171563d12eea4e3c38552\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="73c80b05a390e8319d1ef7a236739cd610c8f774">
+        <dex dex="C:\Users\zschr\Desktop\test\app\build\intermediates\pre-dexed\debug\classes_59060dd5321c0282d727e744c776b7d00426dadf.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\zschr\.android\build-cache\50e5ded557cc51282893a990fc6da6f0868009af\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="97fb40924e83775c91374180494801cb022aa008">
+        <dex dex="C:\Users\zschr\Desktop\test\app\build\intermediates\pre-dexed\debug\classes_2c4f8c6ef5083c134eb847770c88487e38783998.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\zschr\Desktop\test\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
         sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
-        <dex dex="C:\Project\git\FiTime\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_f4497792bf856835c1888d9bc05dbc75cd2dcb48\classes.dex" />
+        <dex dex="C:\Users\zschr\Desktop\test\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_1400f7285c717c29f963b49d9c7f524de7616958\classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="C:\Project\git\FiTime\.android\build-cache\3c39bc40f4d1d06be8970df720bff8ea53a21c52\output\jars\classes.jar"
+        jar="C:\Users\zschr\.android\build-cache\50e5ded557cc51282893a990fc6da6f0868009af\output\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="67eb33110dbacb46a48175b08ae0c96761d2c17d">
-        <dex dex="C:\Project\git\FiTime\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_c2108cc694bdad8e006a7cc12cbe114b6b674b4d\classes.dex" />
+        sha1="97fb40924e83775c91374180494801cb022aa008">
+        <dex dex="C:\Users\zschr\Desktop\test\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_2c4f8c6ef5083c134eb847770c88487e38783998\classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="C:\SDK\extras\android\m2repository\com\android\support\support-annotations\25.2.0\support-annotations-25.2.0.jar"
+        jar="C:\Users\zschr\.android\build-cache\1f9853b9071d14cc6d222214e84a623e95a719a3\output\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="4a5a82a027706397fff621b22fd6fa796e91d7c5">
-        <dex dex="C:\Project\git\FiTime\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-25.2.0_991140b613c6e52cb7666404f85c73ec3a1a5f05\classes.dex" />
+        sha1="643a2fd3bd06c44be5d20efc0ba4ca02036d2c8a">
+        <dex dex="C:\Users\zschr\Desktop\test\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_65ecf28bf93e2cb00082e9f87db2bc494da8954d\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\zschr\.android\build-cache\1f9853b9071d14cc6d222214e84a623e95a719a3\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="643a2fd3bd06c44be5d20efc0ba4ca02036d2c8a">
+        <dex dex="C:\Users\zschr\Desktop\test\app\build\intermediates\pre-dexed\debug\classes_65ecf28bf93e2cb00082e9f87db2bc494da8954d.jar" />
     </item>
     <item
         is-multidex="true"
-        jar="C:\Project\git\FiTime\.android\build-cache\52a3a0d65d2a258ae041df1f90c35b65015ff28f\output\jars\classes.jar"
+        jar="C:\Users\zschr\.android\build-cache\ea8d998f42597bdc26dab2946c35a3258f219686\output\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="fa0446a14ed5dd3725047d6399ffea771a564b30">
-        <dex dex="C:\Project\git\FiTime\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_d701aa4a3cb83d71a12bdfc5766107c4b385176b\classes.dex" />
+        sha1="6e6b94b72d7912a627fb1629c310b2bca9261f06">
+        <dex dex="C:\Users\zschr\Desktop\test\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_3df21906b94ef3171283ef4340bd7c45ef874d0c\classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="C:\Project\git\FiTime\.android\build-cache\0446bef87ca7c6568ef622fee309d378cbefa8d6\output\jars\classes.jar"
+        jar="C:\Users\zschr\.android\build-cache\9264f35e2415ee659a46087d016c5281820b205e\output\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="810f41e5b7fd99f196ebeabe865ba2c54e7e76dc">
-        <dex dex="C:\Project\git\FiTime\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_356ab7d4b700ac526a323c01c4065176b4cfde04\classes.dex" />
+        sha1="bed98ea7af8c5c4202820875e856dd3eb296e22d">
+        <dex dex="C:\Users\zschr\Desktop\test\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_d3a25078d0d134f655eb55e31d5708ee46548cf0\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\zschr\.android\build-cache\9264f35e2415ee659a46087d016c5281820b205e\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="bed98ea7af8c5c4202820875e856dd3eb296e22d">
+        <dex dex="C:\Users\zschr\Desktop\test\app\build\intermediates\pre-dexed\debug\classes_d3a25078d0d134f655eb55e31d5708ee46548cf0.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\zschr\.android\build-cache\ea8d998f42597bdc26dab2946c35a3258f219686\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="6e6b94b72d7912a627fb1629c310b2bca9261f06">
+        <dex dex="C:\Users\zschr\Desktop\test\app\build\intermediates\pre-dexed\debug\classes_3df21906b94ef3171283ef4340bd7c45ef874d0c.jar" />
     </item>
     <item
         is-multidex="true"
-        jar="C:\Project\git\FiTime\.android\build-cache\f1a37dd515a12c6c12d74346d3c2eb536afb762e\output\jars\classes.jar"
+        jar="C:\Users\zschr\Desktop\test\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="26384be22ddc74cfe197ebda9edbc7d1fd8bd537">
-        <dex dex="C:\Project\git\FiTime\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_bdd3005cbd039ff3decc66986fe7bd9909f0b442\classes.dex" />
+        sha1="81ed919de9e7ffc1460053b39099ffa5ff6b5048">
+        <dex dex="C:\Users\zschr\Desktop\test\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_143b9feaf6cc3116ff7f7ff9089e9108faf101b4\classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="C:\Project\git\FiTime\.android\build-cache\0bf562a05f5e95d22e94e52a694b19ef7cc97c86\output\jars\classes.jar"
+        jar="C:\Users\zschr\.android\build-cache\c0f5590b2cda7209c0324a243c274b8cb6a19bd2\output\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="e820b7be8c035dd522da4bc822e8a76c8e27921a">
-        <dex dex="C:\Project\git\FiTime\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_9af87d771784e9622fa02aebe5c8bbd7606faaa2\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Project\git\FiTime\.android\build-cache\47bcca6aaa5f3ac2f3d808a66a3ab399fc1253cc\output\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="5e497d60f0cb6ce87c458ac5420a46d0fed49bd0">
-        <dex dex="C:\Project\git\FiTime\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_953dc608699728125627b1ce0fe1056bea7b877c\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Project\git\FiTime\.android\build-cache\0062318843c56418ad3a09e85b3a930ba752687b\output\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="0c6d948e6cb9ea6f535d175fb61ba2930719c0e9">
-        <dex dex="C:\Project\git\FiTime\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_4c99d8110259f84f88e565058202e08c09ef4404\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Project\Test\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="b70e9ed013d1d4d96556f3e34ef82e2080b7ff2b">
-        <dex dex="C:\Project\Test\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_ba28f44027f7fbcdbf292d0600537edc42efe6cd\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Project\git\FiTime\.android\build-cache\30d580810242e44a8a1947e5f7cd5245bb8ff453\output\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
-        <dex dex="C:\Project\git\FiTime\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_eda3d988962a650b3fe7a794fa3078e450bce063\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Project\git\FiTime\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="ade2e3fe19ceb230676a5bc76cac728478099b0d">
-        <dex dex="C:\Project\git\FiTime\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_99e1d4af3f1d713fe1b7ed678d9ccc0c80a48491\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Project\Test\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
-        <dex dex="C:\Project\Test\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_9bc4d3dfc87bd7f7951b76a837278b17f472a211\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Project\git\FiTime\.android\build-cache\a501ee03d04d667ed10580a59ec76991b527d5e5\output\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="ee394a892dd21c03a528139c1e8d4e0e1264ac84">
-        <dex dex="C:\Project\git\FiTime\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_7b1c2eb166e3923552b9188135ddceee24e7cd5d\classes.dex" />
+        sha1="20d6aa9a18ea9833cd2bee95dff7cd303cdb80e4">
+        <dex dex="C:\Users\zschr\Desktop\test\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_fe916b6e7b18219344e1efebf9cb69a6e64985b4\classes.dex" />
     </item>
 
 </items>
