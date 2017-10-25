@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/calendar_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+    <ImageView
+        android:id="@+id/today"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:cropToPadding="false"
+        android:layout_margin="10dp"
+        app:srcCompat="@drawable/day_view"
+        android:layout_alignParentTop="true" />
+
+        <TextView
+            android:id="@+id/day"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="22dp"
+            android:textSize="30dp"
+            android:text="Monday"
+            android:paddingLeft="20dp"
+            android:layout_alignBaseline="@+id/today"/>
+    <TextView
+        android:id="@+id/today_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="22dp"
+        android:paddingRight="75dp"
+        android:textSize="30dp"
+        android:text="October 27"
+        android:layout_alignParentRight="true"/>
+    <TextView
+        android:id="@+id/exercise1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Workout 1"
+        android:textSize="20dp"
+        android:layout_below="@+id/today_date"
+        android:layout_alignLeft="@+id/today_date"
+        android:paddingLeft="10dp"
+        android:paddingRight="3dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="3dp"/>
+
+    <TextView
+        android:id="@+id/exercise2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Workout 2"
+        android:textSize="20dp"
+        android:layout_below="@+id/exercise1"
+        android:layout_alignLeft="@+id/exercise1"
+        android:paddingLeft="10dp"
+        android:paddingRight="3dp"
+        android:paddingTop="3dp"
+        android:paddingBottom="3dp"/>
+
+    <TextView
+        android:id="@+id/exercise3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Workout 3"
+        android:textSize="20dp"
+        android:layout_below="@+id/exercise2"
+        android:layout_alignLeft="@+id/exercise2"
+        android:layout_alignStart="@+id/exercise2"
+        android:paddingLeft="10dp"
+        android:paddingRight="3dp"
+        android:paddingTop="3dp"
+        android:paddingBottom="3dp"/>
+    <TextView
+        android:id="@+id/time1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Time 1"
+        android:textSize="20dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="3dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="3dp"
+        android:layout_below="@+id/day"
+        android:layout_alignLeft="@+id/day"/>
+
+    <TextView
+        android:id="@+id/time2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Time 2"
+        android:textSize="20dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="3dp"
+        android:paddingTop="3dp"
+        android:paddingBottom="3dp"
+        android:layout_below="@+id/time1"
+        android:layout_alignLeft="@+id/day"/>
+
+    <TextView
+        android:id="@+id/time3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Time 3"
+        android:textSize="20dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="3dp"
+        android:paddingTop="3dp"
+        android:paddingBottom="3dp"
+        android:layout_below="@+id/time2"
+        android:layout_alignLeft="@+id/day"
+        />
+
+    </RelativeLayout>
+</ScrollView>
