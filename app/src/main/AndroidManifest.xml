@@ -30,6 +30,8 @@
         </activity>
         <activity android:name=".MainActivity"/>
         <activity android:name=".StartButtonActivity"/>
+        <activity android:name=".ScheduleWorkoutActivity"/>
+        <activity android:name=".FullScheduleActivity"/>
 
     </application>
 

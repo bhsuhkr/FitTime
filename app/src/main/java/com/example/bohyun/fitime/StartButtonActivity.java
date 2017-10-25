@@ -22,10 +22,10 @@ public class StartButtonActivity extends Activity {
 
        videoView = (VideoView) findViewById(R.id.video);
         bplay = (Button) findViewById(R.id.play);
-        stop = (Button) findViewById(R.id.pause);
+//        stop = (Button) findViewById(R.id.pause);
 
 
-        String path = "android.resource://"+getPackageName()+"/"+R.raw.example;
+        String path = "android.resource://"+getPackageName()+"/"+ R.raw.example;
         Uri uri = Uri.parse(path);
 
 
@@ -44,9 +44,24 @@ public class StartButtonActivity extends Activity {
         bplay.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                videoView.pause();
+                if(videoView.isPlaying()){
+                    videoView.pause();
+                    bplay.setText("Play");
+                } else {
+                    videoView.start();
+                    bplay.setText("Pause");
+                }
             }
         });
+//
+//        stop.setOnClickListener(new View.OnClickListener(){
+//            @Override
+//            public void onClick(View v) {
+//                videoView.pause();
+//            }
+//        });
+
+
 
     }
 }
