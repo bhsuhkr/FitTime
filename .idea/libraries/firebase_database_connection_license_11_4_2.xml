@@ -1,8 +1,8 @@
 <component name="libraryTable">
   <library name="firebase-database-connection-license-11.4.2">
     <CLASSES>
-      <root url="jar://$PROJECT_DIR$/../git/FiTime/.android/build-cache/e2874cec8930be19bf44d4a2011f05ae41ba0463/output/jars/classes.jar!/" />
-      <root url="file://$PROJECT_DIR$/../git/FiTime/.android/build-cache/e2874cec8930be19bf44d4a2011f05ae41ba0463/output/res" />
+      <root url="jar://$USER_HOME$/.android/build-cache/30c8d2d28b260f67d092adab87362d806df2fab4/output/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.android/build-cache/30c8d2d28b260f67d092adab87362d806df2fab4/output/res" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />
