@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="play-services-basement-license-11.4.2">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/../git/FiTime/.android/build-cache/a64f66e91d7a4461828c2ea548b2deaab9490f2c/output/res" />
+      <root url="jar://$PROJECT_DIR$/../git/FiTime/.android/build-cache/a64f66e91d7a4461828c2ea548b2deaab9490f2c/output/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
