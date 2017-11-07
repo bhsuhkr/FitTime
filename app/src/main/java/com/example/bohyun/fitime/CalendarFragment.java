@@ -15,7 +15,6 @@ public class CalendarFragment extends Fragment{
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        Toast.makeText(getActivity(),"Calendar", Toast.LENGTH_SHORT).show();
         View view = inflater.inflate(R.layout.calendar_fragment, container, false);
 
         Button button = (Button) view.findViewById(R.id.plus_button);

@@ -22,10 +22,6 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
 
-
-
-
-
         //Daily View || Start View
         fragment = new HomeFragment();
         fragmentManager = getSupportFragmentManager();

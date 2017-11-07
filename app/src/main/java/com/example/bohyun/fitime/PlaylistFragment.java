@@ -7,7 +7,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
-import android.widget.Toast;
 
 
 public class PlaylistFragment extends Fragment {
@@ -17,7 +16,6 @@ public class PlaylistFragment extends Fragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        Toast.makeText(getActivity(),"Playlist", Toast.LENGTH_SHORT).show();
         View view = inflater.inflate(R.layout.playlist_fragment, container, false);
         Button button_1 = (Button) view.findViewById(R.id.button_videos);
         button_1.setOnClickListener(new View.OnClickListener() {

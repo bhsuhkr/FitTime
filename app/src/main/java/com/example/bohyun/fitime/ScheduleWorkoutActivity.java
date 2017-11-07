@@ -6,9 +6,6 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
-/**
- * Created by zschr on 10/24/2017.
- */
 
 public class ScheduleWorkoutActivity extends AppCompatActivity {
 
