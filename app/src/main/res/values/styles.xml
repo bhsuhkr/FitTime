@@ -10,7 +10,6 @@
 
     <style name="PreferencesTheme" parent ="Theme.AppCompat.Light">
         <item name="android:background">#BBBBBBBB</item>
-
     </style>
 
 </resources>
