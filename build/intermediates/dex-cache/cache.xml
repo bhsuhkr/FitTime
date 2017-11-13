@@ -2,157 +2,139 @@
 <items version="2" >
 
     <item
-        is-multidex="true"
-        jar="C:\Project\git\FiTime\.android\build-cache\439bb16f20c7fd6a1332bbb22375ba0fb84256d0\output\jars\classes.jar"
-        jumboMode="true"
+        is-multidex="false"
+        jar="C:\Users\Panaru\.android\build-cache\189ec262603d9bba6f636558ca0d2296539cd079\output\jars\classes.jar"
+        jumboMode="false"
         optimize="true"
         revision="25.0.2"
-        sha1="8fe8a8f77d651982ce5e18f6187dc4daf914ac57">
-        <dex dex="C:\Project\git\FiTime\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_775fd3820c5346861eb9eb35117d94528fbdc4c6\classes.dex" />
+        sha1="c2cadea4d8a1a5b5c4e5f0dc99a99a43774f5e6e">
+        <dex dex="C:\Users\Panaru\Documents\White Fairy\Git\FitTime\app\build\intermediates\pre-dexed\debug\classes_989d561c88afa8b723199a0ce323af2ee23076a6.jar" />
     </item>
     <item
-        is-multidex="true"
-        jar="C:\Project\git\FiTime\.android\build-cache\d3fa498e96fe9aad4e038050bfb5740a6d7305f0\output\jars\classes.jar"
-        jumboMode="true"
+        is-multidex="false"
+        jar="C:\Users\Panaru\.android\build-cache\138590c886d70b2a10d990d0d000d990ed6164fe\output\jars\classes.jar"
+        jumboMode="false"
         optimize="true"
         revision="25.0.2"
-        sha1="702d339bc0a81d21354cd7e2cf2b67225fa4a16c">
-        <dex dex="C:\Project\git\FiTime\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_78ed122d30ca2a7874ef0e0ce93f6dc2b8e9454f\classes.dex" />
+        sha1="8bc45ce1f63d1a391fd38b32a201be5a42f9c95d">
+        <dex dex="C:\Users\Panaru\Documents\White Fairy\Git\FitTime\app\build\intermediates\pre-dexed\debug\classes_bf7d8e47d1671db2db77120263ca47b17e72c7cb.jar" />
     </item>
     <item
-        is-multidex="true"
-        jar="C:\Project\git\FiTime\.android\build-cache\bab9abaf715e9dd19d7a92db4015104bb7862f88\output\jars\classes.jar"
-        jumboMode="true"
+        is-multidex="false"
+        jar="C:\Users\Panaru\.android\build-cache\45c6e09352d19b569293ecefcf78e20375e67644\output\jars\classes.jar"
+        jumboMode="false"
         optimize="true"
         revision="25.0.2"
-        sha1="cb454b52545859ed2f24a6c01366805b0fa04b22">
-        <dex dex="C:\Project\git\FiTime\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_2f8031da698c846f2da8b15248b3fd2c2a4cff63\classes.dex" />
+        sha1="97fb40924e83775c91374180494801cb022aa008">
+        <dex dex="C:\Users\Panaru\Documents\White Fairy\Git\FitTime\app\build\intermediates\pre-dexed\debug\classes_517a37c479547d72502395a2a291c72b95d39a70.jar" />
     </item>
     <item
-        is-multidex="true"
-        jar="C:\Project\git\FiTime\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
-        jumboMode="true"
+        is-multidex="false"
+        jar="C:\Users\Panaru\.android\build-cache\32ccbb505343d1de3c782a0dee35013bf400b792\output\jars\classes.jar"
+        jumboMode="false"
         optimize="true"
         revision="25.0.2"
-        sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
-        <dex dex="C:\Project\git\FiTime\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_f4497792bf856835c1888d9bc05dbc75cd2dcb48\classes.dex" />
+        sha1="2d45b277afdf55bcfdc005c03c0c2f1733aaa1b0">
+        <dex dex="C:\Users\Panaru\Documents\White Fairy\Git\FitTime\app\build\intermediates\pre-dexed\debug\classes_d8690287c3ba245f5501f3b67407786a6ab6a541.jar" />
     </item>
     <item
-        is-multidex="true"
-        jar="C:\Project\git\FiTime\.android\build-cache\3c39bc40f4d1d06be8970df720bff8ea53a21c52\output\jars\classes.jar"
-        jumboMode="true"
+        is-multidex="false"
+        jar="C:\Users\Panaru\.android\build-cache\9ec2e1cdeb50b12ac7232ea8348c2f44bb421411\output\jars\classes.jar"
+        jumboMode="false"
         optimize="true"
         revision="25.0.2"
-        sha1="67eb33110dbacb46a48175b08ae0c96761d2c17d">
-        <dex dex="C:\Project\git\FiTime\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_c2108cc694bdad8e006a7cc12cbe114b6b674b4d\classes.dex" />
+        sha1="53a420cd4f49274db6bd43475f8006ba67ef6bbd">
+        <dex dex="C:\Users\Panaru\Documents\White Fairy\Git\FitTime\app\build\intermediates\pre-dexed\debug\classes_673f326eed289393c7a34919de41a72f5e618909.jar" />
     </item>
     <item
-        is-multidex="true"
-        jar="C:\SDK\extras\android\m2repository\com\android\support\support-annotations\25.2.0\support-annotations-25.2.0.jar"
-        jumboMode="true"
+        is-multidex="false"
+        jar="C:\Users\Panaru\.android\build-cache\5c64ba92d192056e714fa31f60d42209fd254b33\output\jars\classes.jar"
+        jumboMode="false"
         optimize="true"
         revision="25.0.2"
-        sha1="4a5a82a027706397fff621b22fd6fa796e91d7c5">
-        <dex dex="C:\Project\git\FiTime\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-25.2.0_991140b613c6e52cb7666404f85c73ec3a1a5f05\classes.dex" />
+        sha1="5f519b8c692038a47ee404b6ea6b847f6402000c">
+        <dex dex="C:\Users\Panaru\Documents\White Fairy\Git\FitTime\app\build\intermediates\pre-dexed\debug\classes_e00ee33b0a3b34f09a3266ec12e76d7d7ebc52c5.jar" />
     </item>
     <item
-        is-multidex="true"
-        jar="C:\Project\git\FiTime\.android\build-cache\52a3a0d65d2a258ae041df1f90c35b65015ff28f\output\jars\classes.jar"
-        jumboMode="true"
+        is-multidex="false"
+        jar="C:\Users\Panaru\.android\build-cache\16e887adb6acb652b53de044ac4a2cab28e61f3d\output\jars\classes.jar"
+        jumboMode="false"
         optimize="true"
         revision="25.0.2"
-        sha1="fa0446a14ed5dd3725047d6399ffea771a564b30">
-        <dex dex="C:\Project\git\FiTime\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_d701aa4a3cb83d71a12bdfc5766107c4b385176b\classes.dex" />
+        sha1="3e1185bdde08224bf1275f6b4f9771df5e738e1b">
+        <dex dex="C:\Users\Panaru\Documents\White Fairy\Git\FitTime\app\build\intermediates\pre-dexed\debug\classes_cb2cfb00513091156cb53b045f6299cbd308ef33.jar" />
     </item>
     <item
-        is-multidex="true"
-        jar="C:\Project\git\FiTime\.android\build-cache\0446bef87ca7c6568ef622fee309d378cbefa8d6\output\jars\classes.jar"
-        jumboMode="true"
+        is-multidex="false"
+        jar="C:\Users\Panaru\.android\build-cache\76b0ff163b14a8100130c01de6c253f032aec2dc\output\jars\classes.jar"
+        jumboMode="false"
         optimize="true"
         revision="25.0.2"
-        sha1="810f41e5b7fd99f196ebeabe865ba2c54e7e76dc">
-        <dex dex="C:\Project\git\FiTime\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_356ab7d4b700ac526a323c01c4065176b4cfde04\classes.dex" />
+        sha1="d29714cc76b38157e3cbd034c66e1ec808eb4c19">
+        <dex dex="C:\Users\Panaru\Documents\White Fairy\Git\FitTime\app\build\intermediates\pre-dexed\debug\classes_b0bc9802a2a90e25eab4f8f3359839c6ce129589.jar" />
     </item>
     <item
-        is-multidex="true"
-        jar="C:\Project\git\FiTime\.android\build-cache\f1a37dd515a12c6c12d74346d3c2eb536afb762e\output\jars\classes.jar"
-        jumboMode="true"
+        is-multidex="false"
+        jar="C:\Users\Panaru\.android\build-cache\241082a175600070ed03c21297fa804079985760\output\jars\classes.jar"
+        jumboMode="false"
         optimize="true"
         revision="25.0.2"
-        sha1="26384be22ddc74cfe197ebda9edbc7d1fd8bd537">
-        <dex dex="C:\Project\git\FiTime\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_bdd3005cbd039ff3decc66986fe7bd9909f0b442\classes.dex" />
+        sha1="bed98ea7af8c5c4202820875e856dd3eb296e22d">
+        <dex dex="C:\Users\Panaru\Documents\White Fairy\Git\FitTime\app\build\intermediates\pre-dexed\debug\classes_9cfecc98bc3c94558283bf9e02459513cbe0e718.jar" />
     </item>
     <item
-        is-multidex="true"
-        jar="C:\Project\git\FiTime\.android\build-cache\0bf562a05f5e95d22e94e52a694b19ef7cc97c86\output\jars\classes.jar"
-        jumboMode="true"
+        is-multidex="false"
+        jar="C:\Users\Panaru\.android\build-cache\cd2780ccf57da4e8900f19164a41d9a0b12b5a6f\output\jars\classes.jar"
+        jumboMode="false"
         optimize="true"
         revision="25.0.2"
-        sha1="e820b7be8c035dd522da4bc822e8a76c8e27921a">
-        <dex dex="C:\Project\git\FiTime\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_9af87d771784e9622fa02aebe5c8bbd7606faaa2\classes.dex" />
+        sha1="8040d53ecd4bd895360eafdc25e1c1cc9479e6aa">
+        <dex dex="C:\Users\Panaru\Documents\White Fairy\Git\FitTime\app\build\intermediates\pre-dexed\debug\classes_7d1de90a2a21e865fea63ee1977bb819ea5935d1.jar" />
     </item>
     <item
-        is-multidex="true"
-        jar="C:\Project\git\FiTime\.android\build-cache\47bcca6aaa5f3ac2f3d808a66a3ab399fc1253cc\output\jars\classes.jar"
-        jumboMode="true"
+        is-multidex="false"
+        jar="C:\Users\Panaru\.android\build-cache\ec9901bd813d45240bcfdd3e75b38738a1560dc1\output\jars\classes.jar"
+        jumboMode="false"
         optimize="true"
         revision="25.0.2"
-        sha1="5e497d60f0cb6ce87c458ac5420a46d0fed49bd0">
-        <dex dex="C:\Project\git\FiTime\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_953dc608699728125627b1ce0fe1056bea7b877c\classes.dex" />
+        sha1="643a2fd3bd06c44be5d20efc0ba4ca02036d2c8a">
+        <dex dex="C:\Users\Panaru\Documents\White Fairy\Git\FitTime\app\build\intermediates\pre-dexed\debug\classes_7a56cbbf524e673af9c8a09821a5237bb1872f42.jar" />
     </item>
     <item
-        is-multidex="true"
-        jar="C:\Project\git\FiTime\.android\build-cache\0062318843c56418ad3a09e85b3a930ba752687b\output\jars\classes.jar"
-        jumboMode="true"
+        is-multidex="false"
+        jar="C:\Users\Panaru\.android\build-cache\32859af167abce73992959b23cc0ef77934d76a8\output\jars\classes.jar"
+        jumboMode="false"
         optimize="true"
         revision="25.0.2"
-        sha1="0c6d948e6cb9ea6f535d175fb61ba2930719c0e9">
-        <dex dex="C:\Project\git\FiTime\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_4c99d8110259f84f88e565058202e08c09ef4404\classes.dex" />
+        sha1="73c80b05a390e8319d1ef7a236739cd610c8f774">
+        <dex dex="C:\Users\Panaru\Documents\White Fairy\Git\FitTime\app\build\intermediates\pre-dexed\debug\classes_ccfca1d8cc4a4c5a1d49ce9f099f4721c843fd41.jar" />
     </item>
     <item
-        is-multidex="true"
-        jar="C:\Project\Test\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
-        jumboMode="true"
+        is-multidex="false"
+        jar="C:\Users\Panaru\.android\build-cache\7aad094f8b94a1bad6312f3b7ea0d2401f966a6c\output\jars\classes.jar"
+        jumboMode="false"
         optimize="true"
         revision="25.0.2"
-        sha1="b70e9ed013d1d4d96556f3e34ef82e2080b7ff2b">
-        <dex dex="C:\Project\Test\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_ba28f44027f7fbcdbf292d0600537edc42efe6cd\classes.dex" />
+        sha1="6e6b94b72d7912a627fb1629c310b2bca9261f06">
+        <dex dex="C:\Users\Panaru\Documents\White Fairy\Git\FitTime\app\build\intermediates\pre-dexed\debug\classes_a180ef918b1b4370c7fdfb4af538bd157a852102.jar" />
     </item>
     <item
-        is-multidex="true"
-        jar="C:\Project\git\FiTime\.android\build-cache\30d580810242e44a8a1947e5f7cd5245bb8ff453\output\jars\classes.jar"
-        jumboMode="true"
+        is-multidex="false"
+        jar="C:\Users\Panaru\.android\build-cache\0e9eaad154e1e9b65d5edfac66d2a558fd75d053\output\jars\classes.jar"
+        jumboMode="false"
         optimize="true"
         revision="25.0.2"
-        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
-        <dex dex="C:\Project\git\FiTime\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_eda3d988962a650b3fe7a794fa3078e450bce063\classes.dex" />
+        sha1="20d6aa9a18ea9833cd2bee95dff7cd303cdb80e4">
+        <dex dex="C:\Users\Panaru\Documents\White Fairy\Git\FitTime\app\build\intermediates\pre-dexed\debug\classes_62a8c3c0b6866d162fb7a7e342c4d7bd1de057ee.jar" />
     </item>
     <item
-        is-multidex="true"
-        jar="C:\Project\git\FiTime\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
-        jumboMode="true"
+        is-multidex="false"
+        jar="C:\Users\Panaru\.android\build-cache\7fb19038c04325c762132e2c58822812fa37482b\output\jars\classes.jar"
+        jumboMode="false"
         optimize="true"
         revision="25.0.2"
-        sha1="ade2e3fe19ceb230676a5bc76cac728478099b0d">
-        <dex dex="C:\Project\git\FiTime\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_99e1d4af3f1d713fe1b7ed678d9ccc0c80a48491\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Project\Test\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
-        <dex dex="C:\Project\Test\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_9bc4d3dfc87bd7f7951b76a837278b17f472a211\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Project\git\FiTime\.android\build-cache\a501ee03d04d667ed10580a59ec76991b527d5e5\output\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="ee394a892dd21c03a528139c1e8d4e0e1264ac84">
-        <dex dex="C:\Project\git\FiTime\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_7b1c2eb166e3923552b9188135ddceee24e7cd5d\classes.dex" />
+        sha1="52339832d252da4328c5ffcacbc205268346362a">
+        <dex dex="C:\Users\Panaru\Documents\White Fairy\Git\FitTime\app\build\intermediates\pre-dexed\debug\classes_ec4dd4c7f151daed2112260f73894a15dd492c0f.jar" />
     </item>
 
 </items>

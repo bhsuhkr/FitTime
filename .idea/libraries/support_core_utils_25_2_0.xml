@@ -1,8 +1,8 @@
 <component name="libraryTable">
   <library name="support-core-utils-25.2.0">
     <CLASSES>
-      <root url="jar://$PROJECT_DIR$/../git/FiTime/.android/build-cache/0bf562a05f5e95d22e94e52a694b19ef7cc97c86/output/jars/classes.jar!/" />
-      <root url="file://$PROJECT_DIR$/../git/FiTime/.android/build-cache/0bf562a05f5e95d22e94e52a694b19ef7cc97c86/output/res" />
+      <root url="file://$USER_HOME$/.android/build-cache/1954c22d9c44dc3d863fbcb6abdf88c2e579bd10/output/res" />
+      <root url="jar://$USER_HOME$/.android/build-cache/1954c22d9c44dc3d863fbcb6abdf88c2e579bd10/output/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

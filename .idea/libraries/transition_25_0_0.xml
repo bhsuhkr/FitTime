@@ -1,8 +1,8 @@
 <component name="libraryTable">
   <library name="transition-25.0.0">
     <CLASSES>
-      <root url="jar://$PROJECT_DIR$/../git/FiTime/.android/build-cache/0062318843c56418ad3a09e85b3a930ba752687b/output/jars/classes.jar!/" />
-      <root url="file://$PROJECT_DIR$/../git/FiTime/.android/build-cache/0062318843c56418ad3a09e85b3a930ba752687b/output/res" />
+      <root url="jar://$USER_HOME$/.android/build-cache/b5d9746b94cbb358ec238898fa26e65ca121f1af/output/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.android/build-cache/b5d9746b94cbb358ec238898fa26e65ca121f1af/output/res" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
