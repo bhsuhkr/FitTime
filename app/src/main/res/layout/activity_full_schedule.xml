@@ -1,120 +1,1226 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
-
-    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        android:id="@+id/calendar_fragment"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" >
-
-    <ImageView
-        android:id="@+id/today"
+    android:layout_height="match_parent"
+    android:padding="5dp">
+    <FrameLayout
+        android:id="@+id/FrameLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:adjustViewBounds="true"
-        android:cropToPadding="false"
-        android:layout_margin="10dp"
-        app:srcCompat="@drawable/day_view"
-        android:layout_alignParentTop="true" />
+        android:layout_marginTop="5dp"
+        >
 
-        <TextView
-            android:id="@+id/day"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:paddingTop="22dp"
-            android:textSize="30dp"
-            android:text="Monday"
-            android:paddingLeft="20dp"
-            android:layout_alignBaseline="@+id/today"/>
-    <TextView
-        android:id="@+id/today_date"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:paddingTop="22dp"
-        android:paddingRight="75dp"
-        android:textSize="30dp"
-        android:text="October 27"
-        android:layout_alignParentRight="true"/>
-    <TextView
-        android:id="@+id/exercise1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Workout 1"
-        android:textSize="20dp"
-        android:layout_below="@+id/today_date"
-        android:layout_alignLeft="@+id/today_date"
-        android:paddingLeft="10dp"
-        android:paddingRight="3dp"
-        android:paddingTop="10dp"
-        android:paddingBottom="3dp"/>
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/calendar_fragment"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp">
 
-    <TextView
-        android:id="@+id/exercise2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Workout 2"
-        android:textSize="20dp"
-        android:layout_below="@+id/exercise1"
-        android:layout_alignLeft="@+id/exercise1"
-        android:paddingLeft="10dp"
-        android:paddingRight="3dp"
-        android:paddingTop="3dp"
-        android:paddingBottom="3dp"/>
+            <FrameLayout
+                android:id="@+id/FrameLayout1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:visibility="gone">
 
-    <TextView
-        android:id="@+id/exercise3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Workout 3"
-        android:textSize="20dp"
-        android:layout_below="@+id/exercise2"
-        android:layout_alignLeft="@+id/exercise2"
-        android:layout_alignStart="@+id/exercise2"
-        android:paddingLeft="10dp"
-        android:paddingRight="3dp"
-        android:paddingTop="3dp"
-        android:paddingBottom="3dp"/>
-    <TextView
-        android:id="@+id/time1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Time 1"
-        android:textSize="20dp"
-        android:paddingLeft="20dp"
-        android:paddingRight="3dp"
-        android:paddingTop="10dp"
-        android:paddingBottom="3dp"
-        android:layout_below="@+id/day"
-        android:layout_alignLeft="@+id/day"/>
+                <ImageView
+                    android:id="@+id/bckgrnd1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/day_view" />
 
-    <TextView
-        android:id="@+id/time2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Time 2"
-        android:textSize="20dp"
-        android:paddingLeft="20dp"
-        android:paddingRight="3dp"
-        android:paddingTop="3dp"
-        android:paddingBottom="3dp"
-        android:layout_below="@+id/time1"
-        android:layout_alignLeft="@+id/day"/>
+                <LinearLayout
+                    android:id="@+id/today_layout1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/time3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Time 3"
-        android:textSize="20dp"
-        android:paddingLeft="20dp"
-        android:paddingRight="3dp"
-        android:paddingTop="3dp"
-        android:paddingBottom="3dp"
-        android:layout_below="@+id/time2"
-        android:layout_alignLeft="@+id/day"
-        />
+                    <LinearLayout
+                        android:id="@+id/today_date1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="10"
+                        android:orientation="horizontal"
+                        android:weightSum="10">
 
-    </RelativeLayout>
+                        <RelativeLayout
+                            android:layout_width="230dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="8">
+
+                            <TextView
+                                android:id="@+id/day1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="4"
+                                android:gravity="center"
+                                android:paddingLeft="15dp"
+                                android:paddingTop="15dp"
+                                android:text="@string/day_su"
+                                android:textSize="21sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/date1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_toRightOf="@+id/day1"
+                                android:layout_weight="4"
+                                android:gravity="center"
+                                android:paddingLeft="7dp"
+                                android:paddingTop="15dp"
+                                android:text="November 27"
+                                android:textSize="21sp"
+                                android:textStyle="bold" />
+                        </RelativeLayout>
+
+                        <Space
+                            android:layout_width="2dp"
+                            android:layout_height="20dp"
+                            android:layout_weight="1" />
+
+                        <ImageButton
+                            android:id="@+id/delete_button1"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_gravity="center"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/delete_button"
+                            android:gravity="center" />
+
+                        <Space
+                            android:layout_width="2dp"
+                            android:layout_height="20dp"
+                            android:layout_weight="1" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="5"
+                        android:orientation="horizontal"
+                        android:weightSum="6">
+
+                        <TextView
+                            android:id="@+id/time1_1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="4"
+                            android:gravity="center"
+                            android:paddingBottom="3dp"
+                            android:paddingTop="10dp"
+                            android:text="Time 1"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:id="@+id/exercise1_1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:gravity="center"
+                            android:paddingBottom="3dp"
+                            android:paddingTop="10dp"
+                            android:textSize="20sp"
+                            tools:text="Workout 1" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="5"
+                        android:orientation="horizontal"
+                        android:weightSum="6">
+
+                        <TextView
+                            android:id="@+id/time2_1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="4"
+                            android:gravity="center"
+                            android:paddingBottom="3dp"
+                            android:paddingTop="3dp"
+                            android:text="Time 2"
+                            android:textSize="20dp" />
+
+                        <TextView
+                            android:id="@+id/exercise2_1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:gravity="center"
+                            android:paddingBottom="3dp"
+                            android:paddingTop="3dp"
+                            android:text="Workout 2"
+                            android:textSize="20dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="5"
+                        android:orientation="horizontal"
+                        android:weightSum="6">
+
+                        <TextView
+                            android:id="@+id/time3_1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="4"
+                            android:gravity="center"
+                            android:paddingBottom="10dp"
+                            android:paddingTop="3dp"
+                            android:text="Time 3"
+                            android:textSize="20dp" />
+
+                        <TextView
+                            android:id="@+id/exercise3_1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:gravity="center"
+                            android:paddingBottom="10dp"
+                            android:paddingTop="3dp"
+                            android:text="Workout 3"
+                            android:textSize="20dp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/FrameLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/day_view" />
+
+                <LinearLayout
+                    android:id="@+id/today_layout2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/today_date2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="10"
+                        android:orientation="horizontal"
+                        android:weightSum="10">
+
+                        <RelativeLayout
+                            android:layout_width="230dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="8">
+
+                            <TextView
+                                android:id="@+id/day2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="left"
+                                android:paddingLeft="15dp"
+                                android:paddingTop="15dp"
+                                android:text="@string/day_m"
+                                android:textSize="21sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/date2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_toRightOf="@+id/day2"
+                                android:gravity="right"
+                                android:paddingLeft="7dp"
+                                android:paddingTop="15dp"
+                                android:text="November 27"
+                                android:textSize="21sp"
+                                android:textStyle="bold" />
+                        </RelativeLayout>
+
+                        <Space
+                            android:layout_width="2dp"
+                            android:layout_height="20dp"
+                            android:layout_weight="1" />
+
+                        <ImageButton
+                            android:id="@+id/delete_button2"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_gravity="center"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/delete_button"
+                            android:gravity="center" />
+
+                        <Space
+                            android:layout_width="2dp"
+                            android:layout_height="20dp"
+                            android:layout_weight="1" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="5"
+                        android:orientation="horizontal"
+                        android:weightSum="6">
+
+                        <TextView
+                            android:id="@+id/time1_2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="4"
+                            android:gravity="center"
+                            android:paddingBottom="3dp"
+                            android:paddingTop="10dp"
+                            android:text="Time 1"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:id="@+id/exercise1_2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:gravity="center"
+                            android:paddingBottom="3dp"
+                            android:paddingTop="10dp"
+                            android:text="Workout 1"
+                            android:textSize="20sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="5"
+                        android:orientation="horizontal"
+                        android:weightSum="6">
+
+                        <TextView
+                            android:id="@+id/time2_2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="4"
+                            android:gravity="center"
+                            android:paddingBottom="3dp"
+                            android:paddingTop="3dp"
+                            android:text="Time 2"
+                            android:textSize="20dp" />
+
+                        <TextView
+                            android:id="@+id/exercise2_2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:gravity="center"
+                            android:paddingBottom="3dp"
+                            android:paddingTop="3dp"
+                            android:text="Workout 2"
+                            android:textSize="20dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="5"
+                        android:orientation="horizontal"
+                        android:weightSum="6">
+
+                        <TextView
+                            android:id="@+id/time3_2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="4"
+                            android:gravity="center"
+                            android:paddingBottom="10dp"
+                            android:paddingTop="3dp"
+                            android:text="Time 3"
+                            android:textSize="20dp" />
+
+                        <TextView
+                            android:id="@+id/exercise3_2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:gravity="center"
+                            android:paddingBottom="10dp"
+                            android:paddingTop="3dp"
+                            android:text="Workout 3"
+                            android:textSize="20dp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/FrameLayout3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/day_view" />
+
+                <LinearLayout
+                    android:id="@+id/today_layout3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/today_date3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="10"
+                        android:orientation="horizontal"
+                        android:weightSum="10">
+
+                        <RelativeLayout
+                            android:layout_width="230dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="8">
+
+                            <TextView
+                                android:id="@+id/day3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="4"
+                                android:gravity="left"
+                                android:paddingLeft="15dp"
+                                android:paddingTop="15dp"
+                                android:text="@string/day_t"
+                                android:textSize="21sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/date3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_toRightOf="@+id/day3"
+                                android:layout_weight="4"
+                                android:gravity="center"
+                                android:paddingLeft="7dp"
+                                android:paddingTop="15dp"
+                                android:text="November 27"
+                                android:textAlignment="center"
+                                android:textSize="21sp"
+                                android:textStyle="bold" />
+                        </RelativeLayout>
+
+                        <Space
+                            android:layout_width="2dp"
+                            android:layout_height="20dp"
+                            android:layout_weight="1" />
+
+                        <ImageButton
+                            android:id="@+id/delete_button3"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_gravity="center"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/delete_button"
+                            android:gravity="center" />
+
+                        <Space
+                            android:layout_width="2dp"
+                            android:layout_height="20dp"
+                            android:layout_weight="1" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="5"
+                        android:orientation="horizontal"
+                        android:weightSum="6">
+
+                        <TextView
+                            android:id="@+id/time1_3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="4"
+                            android:gravity="center"
+                            android:paddingBottom="3dp"
+                            android:paddingTop="10dp"
+                            android:text="Time 1"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:id="@+id/exercise1_3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:gravity="center"
+                            android:paddingBottom="3dp"
+                            android:paddingTop="10dp"
+                            android:text="Workout 1"
+                            android:textSize="20sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="5"
+                        android:orientation="horizontal"
+                        android:weightSum="6">
+
+                        <TextView
+                            android:id="@+id/time2_3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="4"
+                            android:gravity="center"
+                            android:paddingBottom="3dp"
+                            android:paddingTop="3dp"
+                            android:text="Time 2"
+                            android:textSize="20dp" />
+
+                        <TextView
+                            android:id="@+id/exercise2_3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:gravity="center"
+                            android:paddingBottom="3dp"
+                            android:paddingTop="3dp"
+                            android:text="Workout 2"
+                            android:textSize="20dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="5"
+                        android:orientation="horizontal"
+                        android:weightSum="6">
+
+                        <TextView
+                            android:id="@+id/time3_3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="4"
+                            android:gravity="center"
+                            android:paddingBottom="10dp"
+                            android:paddingTop="3dp"
+                            android:text="Time 3"
+                            android:textSize="20dp" />
+
+                        <TextView
+                            android:id="@+id/exercise3_3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:gravity="center"
+                            android:paddingBottom="10dp"
+                            android:paddingTop="3dp"
+                            android:text="Workout 3"
+                            android:textSize="20dp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/FrameLayout4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/day_view" />
+
+                <LinearLayout
+                    android:id="@+id/today_layout4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/today_date4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="10"
+                        android:orientation="horizontal"
+                        android:weightSum="10">
+
+                        <RelativeLayout
+                            android:layout_width="230dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="8">
+
+                            <TextView
+                                android:id="@+id/day4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="4"
+                                android:gravity="center"
+                                android:paddingLeft="15dp"
+                                android:paddingTop="15dp"
+                                android:text="@string/day_w"
+                                android:textSize="21sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/date4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_toRightOf="@id/day4"
+                                android:layout_weight="4"
+                                android:gravity="center"
+                                android:paddingLeft="7dp"
+                                android:paddingTop="15dp"
+                                android:text="November 27"
+                                android:textSize="21sp"
+                                android:textStyle="bold" />
+                        </RelativeLayout>
+
+                        <Space
+                            android:layout_width="2dp"
+                            android:layout_height="20dp"
+                            android:layout_weight="1" />
+
+                        <ImageButton
+                            android:id="@+id/delete_button4"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_gravity="center"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/delete_button"
+                            android:gravity="center" />
+
+                        <Space
+                            android:layout_width="2dp"
+                            android:layout_height="20dp"
+                            android:layout_weight="1" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="5"
+                        android:orientation="horizontal"
+                        android:weightSum="6">
+
+                        <TextView
+                            android:id="@+id/time1_4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="4"
+                            android:gravity="center"
+                            android:paddingBottom="3dp"
+                            android:paddingTop="10dp"
+                            android:text="Time 1"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:id="@+id/exercise1_4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:gravity="center"
+                            android:paddingBottom="3dp"
+                            android:paddingTop="10dp"
+                            android:text="Workout 1"
+                            android:textSize="20sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="5"
+                        android:orientation="horizontal"
+                        android:weightSum="6">
+
+                        <TextView
+                            android:id="@+id/time2_4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="4"
+                            android:gravity="center"
+                            android:paddingBottom="3dp"
+                            android:paddingTop="3dp"
+                            android:text="Time 2"
+                            android:textSize="20dp" />
+
+                        <TextView
+                            android:id="@+id/exercise2_4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:gravity="center"
+                            android:paddingBottom="3dp"
+                            android:paddingTop="3dp"
+                            android:text="Workout 2"
+                            android:textSize="20dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="5"
+                        android:orientation="horizontal"
+                        android:weightSum="6">
+
+                        <TextView
+                            android:id="@+id/time3_4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="4"
+                            android:gravity="center"
+                            android:paddingBottom="10dp"
+                            android:paddingTop="3dp"
+                            android:text="Time 3"
+                            android:textSize="20dp" />
+
+                        <TextView
+                            android:id="@+id/exercise3_4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:gravity="center"
+                            android:paddingBottom="10dp"
+                            android:paddingTop="3dp"
+                            android:text="Workout 3"
+                            android:textSize="20dp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/FrameLayout5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/day_view" />
+
+                <LinearLayout
+                    android:id="@+id/today_layout5"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/today_date5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="10"
+                        android:orientation="horizontal">
+
+                        <RelativeLayout
+                            android:layout_width="230dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="8">
+
+                            <TextView
+                                android:id="@+id/day5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="4"
+                                android:gravity="center"
+                                android:paddingLeft="15dp"
+                                android:paddingTop="15dp"
+                                android:text="@string/day_th"
+                                android:textSize="21sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/date5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_toRightOf="@+id/day5"
+                                android:layout_weight="4"
+                                android:gravity="center"
+                                android:paddingLeft="7dp"
+                                android:paddingTop="15dp"
+                                android:text="November 27"
+                                android:textSize="21sp"
+                                android:textStyle="bold" />
+                        </RelativeLayout>
+
+                        <Space
+                            android:layout_width="2dp"
+                            android:layout_height="20dp"
+                            android:layout_weight="1" />
+
+                        <ImageButton
+                            android:id="@+id/delete_button5"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_gravity="center"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/delete_button"
+                            android:gravity="center" />
+
+                        <Space
+                            android:layout_width="2dp"
+                            android:layout_height="20dp"
+                            android:layout_weight="1" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="5"
+                        android:orientation="horizontal"
+                        android:weightSum="6">
+
+                        <TextView
+                            android:id="@+id/time1_5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="4"
+                            android:gravity="center"
+                            android:paddingBottom="3dp"
+                            android:paddingTop="10dp"
+                            android:text="Time 1"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:id="@+id/exercise1_5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:gravity="center"
+                            android:paddingBottom="3dp"
+                            android:paddingTop="10dp"
+                            android:text="Workout 1"
+                            android:textSize="20sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="5"
+                        android:orientation="horizontal"
+                        android:weightSum="6">
+
+                        <TextView
+                            android:id="@+id/time2_5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="4"
+                            android:gravity="center"
+                            android:paddingBottom="3dp"
+                            android:paddingTop="3dp"
+                            android:text="Time 2"
+                            android:textSize="20dp" />
+
+                        <TextView
+                            android:id="@+id/exercise2_5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:gravity="center"
+                            android:paddingBottom="3dp"
+                            android:paddingTop="3dp"
+                            android:text="Workout 2"
+                            android:textSize="20dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="5"
+                        android:orientation="horizontal"
+                        android:weightSum="6">
+
+                        <TextView
+                            android:id="@+id/time3_5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="4"
+                            android:gravity="center"
+                            android:paddingBottom="10dp"
+                            android:paddingTop="3dp"
+                            android:text="Time 3"
+                            android:textSize="20dp" />
+
+                        <TextView
+                            android:id="@+id/exercise3_5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:gravity="center"
+                            android:paddingBottom="10dp"
+                            android:paddingTop="3dp"
+                            android:text="Workout 3"
+                            android:textSize="20dp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/FrameLayout6"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/day_view" />
+
+                <LinearLayout
+                    android:id="@+id/today_layout6"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/today_date6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="10"
+                        android:orientation="horizontal"
+                        android:weightSum="10">
+
+                        <RelativeLayout
+                            android:layout_width="230dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="8">
+
+                            <TextView
+                                android:id="@+id/day6"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="4"
+                                android:gravity="center"
+                                android:paddingLeft="15dp"
+                                android:paddingTop="15dp"
+                                android:text="@string/day_f"
+                                android:textSize="21sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/date6"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_toRightOf="@id/day6"
+                                android:layout_weight="4"
+                                android:gravity="center"
+                                android:paddingLeft="7dp"
+                                android:paddingTop="15dp"
+                                android:text="November 27"
+                                android:textSize="21sp"
+                                android:textStyle="bold" />
+                        </RelativeLayout>
+
+                        <Space
+                            android:layout_width="2dp"
+                            android:layout_height="20dp"
+                            android:layout_weight="1" />
+
+                        <ImageButton
+                            android:id="@+id/delete_button6"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_gravity="center"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/delete_button"
+                            android:gravity="center" />
+
+                        <Space
+                            android:layout_width="2dp"
+                            android:layout_height="20dp"
+                            android:layout_weight="1" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="5"
+                        android:orientation="horizontal"
+                        android:weightSum="6">
+
+                        <TextView
+                            android:id="@+id/time1_6"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="4"
+                            android:gravity="center"
+                            android:paddingBottom="3dp"
+                            android:paddingTop="10dp"
+                            android:text="Time 1"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:id="@+id/exercise1_6"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:gravity="center"
+                            android:paddingBottom="3dp"
+                            android:paddingTop="10dp"
+                            android:text="Workout 1"
+                            android:textSize="20sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="5"
+                        android:orientation="horizontal"
+                        android:weightSum="6">
+
+                        <TextView
+                            android:id="@+id/time2_6"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="4"
+                            android:gravity="center"
+                            android:paddingBottom="3dp"
+                            android:paddingTop="3dp"
+                            android:text="Time 2"
+                            android:textSize="20dp" />
+
+                        <TextView
+                            android:id="@+id/exercise2_6"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:gravity="center"
+                            android:paddingBottom="3dp"
+                            android:paddingTop="3dp"
+                            android:text="Workout 2"
+                            android:textSize="20dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="5"
+                        android:orientation="horizontal"
+                        android:weightSum="6">
+
+                        <TextView
+                            android:id="@+id/time3_6"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="4"
+                            android:gravity="center"
+                            android:paddingBottom="10dp"
+                            android:paddingTop="3dp"
+                            android:text="Time 3"
+                            android:textSize="20dp" />
+
+                        <TextView
+                            android:id="@+id/exercise3_6"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:gravity="center"
+                            android:paddingBottom="10dp"
+                            android:paddingTop="3dp"
+                            android:text="Workout 3"
+                            android:textSize="20dp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/FrameLayout7"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/day_view" />
+
+                <LinearLayout
+                    android:id="@+id/today_layout7"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/today_date7"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="10"
+                        android:orientation="horizontal"
+                        android:weightSum="10">
+
+                        <RelativeLayout
+                            android:layout_width="230dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="8">
+
+                            <TextView
+                                android:id="@+id/day7"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="4"
+                                android:gravity="center"
+                                android:paddingLeft="15dp"
+                                android:paddingTop="15dp"
+                                android:text="@string/day_s"
+                                android:textSize="22sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/date7"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_toRightOf="@+id/day7"
+                                android:layout_weight="4"
+                                android:gravity="center"
+                                android:paddingLeft="7dp"
+                                android:paddingTop="15dp"
+                                android:text="November 27"
+                                android:textSize="22sp"
+                                android:textStyle="bold" />
+                        </RelativeLayout>
+
+                        <Space
+                            android:layout_width="2dp"
+                            android:layout_height="20dp"
+                            android:layout_weight="1" />
+
+                        <ImageButton
+                            android:id="@+id/delete_button7"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_gravity="center"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/delete_button"
+                            android:gravity="center" />
+
+                        <Space
+                            android:layout_width="2dp"
+                            android:layout_height="20dp"
+                            android:layout_weight="1" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="5"
+                        android:orientation="horizontal"
+                        android:weightSum="6">
+
+                        <TextView
+                            android:id="@+id/time1_7"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="4"
+                            android:gravity="center"
+                            android:paddingBottom="3dp"
+                            android:paddingTop="10dp"
+                            android:text="Time 1"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:id="@+id/exercise1_7"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:gravity="center"
+                            android:paddingBottom="3dp"
+                            android:paddingTop="10dp"
+                            android:text="Workout 1"
+                            android:textSize="20sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="5"
+                        android:orientation="horizontal"
+                        android:weightSum="6">
+
+                        <TextView
+                            android:id="@+id/time2_7"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="4"
+                            android:gravity="center"
+                            android:paddingBottom="3dp"
+                            android:paddingTop="3dp"
+                            android:text="Time 2"
+                            android:textSize="20dp" />
+
+                        <TextView
+                            android:id="@+id/exercise2_7"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:gravity="center"
+                            android:paddingBottom="3dp"
+                            android:paddingTop="3dp"
+                            android:text="Workout 2"
+                            android:textSize="20dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="5"
+                        android:orientation="horizontal"
+                        android:weightSum="6">
+
+                        <TextView
+                            android:id="@+id/time3_7"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="4"
+                            android:gravity="center"
+                            android:paddingBottom="10dp"
+                            android:paddingTop="3dp"
+                            android:text="Time 3"
+                            android:textSize="20dp" />
+
+                        <TextView
+                            android:id="@+id/exercise3_7"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:gravity="center"
+                            android:paddingBottom="10dp"
+                            android:paddingTop="3dp"
+                            android:text="Workout 3"
+                            android:textSize="20dp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </FrameLayout>
+        </LinearLayout>
+    </FrameLayout>
 </ScrollView>
