@@ -14,6 +14,10 @@ import android.view.MenuItem;
 public class MainActivity extends AppCompatActivity {
     private BottomNavigationView mBottomNavigationItem;
     private Fragment fragment;
+    private Fragment homeFrg;
+    private Fragment plyFrg;
+    private Fragment exeFrg;
+    private Fragment schFrg;
     private FragmentManager fragmentManager;
 
     @Override
@@ -21,12 +25,19 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        homeFrg = new HomeFragment();
+        plyFrg = new PlaylistFragment();
+        exeFrg = new ExerciseFragment();
+        schFrg = new CalendarFragment();
+
+        fragment = homeFrg;
 
         //Daily View || Start View
-        fragment = new HomeFragment();
         fragmentManager = getSupportFragmentManager();
         FragmentTransaction transaction = fragmentManager.beginTransaction();
         transaction.replace(R.id.main_container, fragment).commit();
+
+
 
         mBottomNavigationItem = (BottomNavigationView) findViewById(R.id.bottom_navigation);
         mBottomNavigationItem.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
@@ -34,16 +45,16 @@ public class MainActivity extends AppCompatActivity {
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                 switch(item.getItemId()){
                     case R.id.daily_menu:
-                        fragment = new HomeFragment();
+                        fragment = homeFrg;
                         break;
                     case R.id.playlist_menu:
-                        fragment = new PlaylistFragment();
+                        fragment = plyFrg;
                         break;
                     case R.id.exercise_menu:
-                        fragment = new ExerciseFragment();
+                        fragment = exeFrg;
                         break;
                     case R.id.info_menu:
-                        fragment = new CalendarFragment();
+                        fragment = schFrg;
                         break;
                 }
                 final FragmentTransaction transaction = fragmentManager.beginTransaction();
