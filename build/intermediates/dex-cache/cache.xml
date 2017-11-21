@@ -16,8 +16,17 @@
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="ccb24d0510ab6f8f1cc89d6558c80110239b5cd7">
+        sha1="586728c76f23ee2d24809453c6bd07217f3d5ae8">
         <dex dex="C:\Project\develbranch\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_b312fef8bedbce7f83a611393ccd2dfd1c432758\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Project\git\FiTime\.android\build-cache\067113a5a07c495a564edfdf248dbed674ac524f\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="9b8544d0c4d3a508ffc7da674ac79d5dc5d79395">
+        <dex dex="C:\Project\develbranch\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_400532a4da8398e152ae6a1948e915743c7aea79\classes.dex" />
     </item>
 
 </items>
