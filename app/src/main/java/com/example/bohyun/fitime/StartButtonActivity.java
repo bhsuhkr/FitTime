@@ -12,7 +12,7 @@ public class StartButtonActivity extends Activity {
 
 
     private VideoView videoView;
-    private MediaController mediaC;
+    MediaController mediaC;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,7 +22,7 @@ public class StartButtonActivity extends Activity {
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
         videoView = (VideoView) findViewById(R.id.video);
-        MediaController mediaC = new MediaController(this);
+        mediaC = new MediaController(this);
         mediaC.setAnchorView(videoView);
         String path = "android.resource://"+getPackageName()+"/"+ R.raw.example;
         Uri uri = Uri.parse(path);

@@ -1,9 +1,5 @@
 package com.example.bohyun.fitime;
 
-/**
- * Created by zschr on 11/14/2017.
- */
-
 
 import android.app.Dialog;
 import android.content.DialogInterface;

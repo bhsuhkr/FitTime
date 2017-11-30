@@ -30,7 +30,6 @@ public class ExerciseFragment extends Fragment{
         show = (ListView)view.findViewById(R.id.exerList);
         save = (Button)view.findViewById(R.id.addExercise);
 
-        //display all contents from array
         if(!addArray.isEmpty()) {
             for (int i = 0; i < addArray.size(); i++) {
                 ArrayAdapter<String> adapter = new ArrayAdapter<String>(getActivity(), android.R.layout.simple_list_item_1, addArray);
