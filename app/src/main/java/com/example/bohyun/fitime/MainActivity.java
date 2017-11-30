@@ -11,6 +11,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 
+
 public class MainActivity extends AppCompatActivity {
     private BottomNavigationView mBottomNavigationItem;
     private Fragment fragment;
@@ -37,8 +38,6 @@ public class MainActivity extends AppCompatActivity {
         FragmentTransaction transaction = fragmentManager.beginTransaction();
         transaction.replace(R.id.main_container, fragment).commit();
 
-
-
         mBottomNavigationItem = (BottomNavigationView) findViewById(R.id.bottom_navigation);
         mBottomNavigationItem.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
@@ -62,8 +61,8 @@ public class MainActivity extends AppCompatActivity {
                 return false;
             }
         });
-    }
 
+    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -80,8 +79,6 @@ public class MainActivity extends AppCompatActivity {
                 this.startActivity(intent);
                 break;
         }
-
         return true;
     }
-
 }

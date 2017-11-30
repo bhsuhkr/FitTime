@@ -1,17 +1,18 @@
 package com.example.bohyun.fitime;
 
-/**
- * Created by zschr on 11/14/2017.
- */
-
+import android.app.AlarmManager;
 import android.app.Dialog;
+import android.app.PendingIntent;
+import android.content.Context;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.DialogFragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.TextView;
 import android.widget.TimePicker;
+import android.widget.Toast;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -21,6 +22,7 @@ import java.util.Date;
 public class TimePickerFragment extends DialogFragment {
 
     private TimePicker timePicker;
+    Calendar c;
     public interface TimeDialogListener {
         void onFinishDialog(String time);
     }
@@ -36,7 +38,7 @@ public class TimePickerFragment extends DialogFragment {
             date = sdf.parse("00:00");
         } catch (ParseException e) {
         }
-        Calendar c = Calendar.getInstance();
+        c = Calendar.getInstance();
         c.setTime(date);
         timePicker.setCurrentHour(c.get(Calendar.HOUR_OF_DAY));
         timePicker.setCurrentMinute(c.get(Calendar.MINUTE));
@@ -83,6 +85,7 @@ public class TimePickerFragment extends DialogFragment {
                     }
                 })
                 .create();
+
     }
 
     private String updateTime(int hours, int mins) {
@@ -110,4 +113,5 @@ public class TimePickerFragment extends DialogFragment {
 
         return myTime;
     }
+
 }

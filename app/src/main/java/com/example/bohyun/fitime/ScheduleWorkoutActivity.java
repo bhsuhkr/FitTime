@@ -223,7 +223,6 @@ public class ScheduleWorkoutActivity extends AppCompatActivity implements TimePi
                 playlist = "Playlist 1";
                 SelectPlaylistFragment dialog = new SelectPlaylistFragment();
                 dialog.show(getSupportFragmentManager(), "ScheduleWorkoutActivity.PlaylistDialog");
-
             }
         });
 

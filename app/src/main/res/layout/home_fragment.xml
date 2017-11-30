@@ -35,6 +35,11 @@
         </TextView>
 
     </FrameLayout>
-
+    <Button
+        android:id="@+id/testButton"
+        android:text="Notification Test"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"/>
 
 </LinearLayout>
