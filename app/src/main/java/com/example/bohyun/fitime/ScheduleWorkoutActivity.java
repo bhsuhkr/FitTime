@@ -304,8 +304,8 @@ public class ScheduleWorkoutActivity extends AppCompatActivity implements TimePi
 //                        CHECKING IF DAY IS ALREADY SCHEDULED
                         for (int i = 0; i < checkedDays.size(); i++) {
                             String day = checkedDays.get(i);
-                            MainActivity.dayOfTheWeek = day;
-                            setAlarm();
+                            MainActivity.dayOfTheWeek = day; //the output needs to be stored in (MainActivity.dayOfTheWeek) after the algorithm worked.
+                            setAlarm(); // this will set the alarm
                             dayData = day;
                             mDatabase = FirebaseDatabase.getInstance().getReference().child("schedule").child(userId).child("Day");
                             if (dataSnapshot.child(dayData).exists()) {
