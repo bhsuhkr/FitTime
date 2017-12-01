@@ -10,6 +10,7 @@ import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.TimePicker;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -20,6 +21,13 @@ public class MainActivity extends AppCompatActivity {
     private Fragment exeFrg;
     private Fragment schFrg;
     private FragmentManager fragmentManager;
+    public static TimePicker timepicker;
+    public static int timepickerTimeHr;
+    public static int timepickerTimeMin;
+    public static int sendTimeToHomeHr;
+    public static int sendTimeToHomeMin;
+    public static String dayOfTheWeek;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

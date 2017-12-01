@@ -7,12 +7,15 @@
               android:background="@color/background"
              tools:context="com.example.bohyun.fitime.MainActivity">
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Home"
-        android:textStyle="bold"
-        android:textSize="40dp"
-        android:layout_gravity="center|top"/>
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Home"
+    android:textStyle="bold"
+    android:textSize="40dp"
+    android:layout_gravity="center|top"/>
+
+
+
 
     <FrameLayout
         android:layout_width="match_parent"
@@ -33,13 +36,7 @@
             android:clickable="false"
             android:text="START" >
         </TextView>
-
     </FrameLayout>
-    <Button
-        android:id="@+id/testButton"
-        android:text="Notification Test"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"/>
+
 
 </LinearLayout>

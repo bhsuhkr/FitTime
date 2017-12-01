@@ -1,5 +1,9 @@
 package com.example.bohyun.fitime;
 
+import android.app.AlarmManager;
+import android.app.PendingIntent;
+import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
@@ -21,6 +25,7 @@ import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Date;
+import java.util.GregorianCalendar;
 import java.util.concurrent.TimeUnit;
 
 import static android.content.ContentValues.TAG;
@@ -59,7 +64,6 @@ public class ScheduleWorkoutActivity extends AppCompatActivity implements TimePi
     private String dbPlaylist2 = "";
     private String dbPlaylist3 = "";
     private String dayData = "";
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -292,13 +296,16 @@ public class ScheduleWorkoutActivity extends AppCompatActivity implements TimePi
                     Toast.makeText(ScheduleWorkoutActivity.this, "Please schedule workouts at least 30 minutes apart", Toast.LENGTH_SHORT).show();
                 }
                 else {
-                mDatabase.addListenerForSingleValueEvent(new ValueEventListener() {
+                    setTimePickerToVariable();
+                    mDatabase.addListenerForSingleValueEvent(new ValueEventListener() {
                     @Override
                     public void onDataChange(DataSnapshot dataSnapshot) {
 
 //                        CHECKING IF DAY IS ALREADY SCHEDULED
                         for (int i = 0; i < checkedDays.size(); i++) {
                             String day = checkedDays.get(i);
+                            MainActivity.dayOfTheWeek = day;
+                            setAlarm();
                             dayData = day;
                             mDatabase = FirebaseDatabase.getInstance().getReference().child("schedule").child(userId).child("Day");
                             if (dataSnapshot.child(dayData).exists()) {
@@ -448,6 +455,36 @@ public class ScheduleWorkoutActivity extends AppCompatActivity implements TimePi
         }
     }
 
+    private void setTimePickerToVariable(){
+        MainActivity.sendTimeToHomeHr = MainActivity.timepickerTimeHr;
+        MainActivity.sendTimeToHomeMin = MainActivity.timepickerTimeMin;
+    }
+
+    private void setAlarm(){
+        Toast.makeText(this, "Hour: " + MainActivity.sendTimeToHomeHr + " Min: " + MainActivity.sendTimeToHomeMin, Toast.LENGTH_SHORT).show();
+        int hr = MainActivity.sendTimeToHomeHr;
+        int min = MainActivity.sendTimeToHomeMin;
+        Calendar cur_cal = new GregorianCalendar();
+        cur_cal.setTimeInMillis(System.currentTimeMillis());
+
+        Calendar calendar = new GregorianCalendar();
+        calendar.set(Calendar.DAY_OF_YEAR, cur_cal.get(Calendar.DAY_OF_YEAR));
+        calendar.set(Calendar.DATE, cur_cal.get(Calendar.DATE));
+        calendar.set(Calendar.MONTH, cur_cal.get(Calendar.MONTH));
+        calendar.set(Calendar.HOUR_OF_DAY, hr);
+        calendar.set(Calendar.MINUTE, min);
+        calendar.set(Calendar.SECOND, cur_cal.get(Calendar.SECOND));
+        calendar.set(Calendar.MILLISECOND, cur_cal.get(Calendar.MILLISECOND));
+
+        Intent intent = new Intent(this, NotificationActivity.class);
+        final int _id = (int) System.currentTimeMillis();
+        PendingIntent pendingIntent = PendingIntent.getBroadcast(this, _id, intent, PendingIntent.FLAG_UPDATE_CURRENT);
+        AlarmManager alarmManager = (AlarmManager) getSystemService(Context.ALARM_SERVICE);
+        alarmManager.setRepeating(AlarmManager.RTC_WAKEUP, calendar.getTimeInMillis(), AlarmManager.INTERVAL_DAY, pendingIntent);
+    }
+
+
+
     public String getTimeTitle() {
         return time_title;
     }
@@ -457,12 +494,9 @@ public class ScheduleWorkoutActivity extends AppCompatActivity implements TimePi
     public String getPlaylistTitle() {
         return title;
     }
-
-
     public String getPlaylist() {
         return playlist;
     }
-
 
 }
 

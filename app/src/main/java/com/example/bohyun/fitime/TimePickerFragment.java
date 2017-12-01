@@ -15,8 +15,10 @@ import java.util.Date;
 
 public class TimePickerFragment extends DialogFragment {
 
-    private TimePicker timePicker;
+    private TimePicker timePickerInFrg = MainActivity.timepicker;
     Calendar c;
+    int hour, minute;
+    public String timeforNotification;
     public interface TimeDialogListener {
         void onFinishDialog(String time);
     }
@@ -25,7 +27,7 @@ public class TimePickerFragment extends DialogFragment {
         View v = LayoutInflater.from(getActivity())
                 .inflate(R.layout.dialog_time,null);
 
-        timePicker = (TimePicker) v.findViewById(R.id.dialog_time_picker);
+        timePickerInFrg = (TimePicker) v.findViewById(R.id.dialog_time_picker);
         SimpleDateFormat sdf = new SimpleDateFormat("hh:ss");
         Date date = null;
         try {
@@ -34,8 +36,8 @@ public class TimePickerFragment extends DialogFragment {
         }
         c = Calendar.getInstance();
         c.setTime(date);
-        timePicker.setCurrentHour(c.get(Calendar.HOUR_OF_DAY));
-        timePicker.setCurrentMinute(c.get(Calendar.MINUTE));
+        timePickerInFrg.setCurrentHour(c.get(Calendar.HOUR_OF_DAY));
+        timePickerInFrg.setCurrentMinute(c.get(Calendar.MINUTE));
         ScheduleWorkoutActivity activity = (ScheduleWorkoutActivity) getActivity();
         String time = activity.getTimeTitle();
         return new android.support.v7.app.AlertDialog.Builder(getActivity())
@@ -45,12 +47,11 @@ public class TimePickerFragment extends DialogFragment {
                         new DialogInterface.OnClickListener() {
                             @Override
                             public void onClick(DialogInterface dialog, int which) {
-                                int hour = 0;
-                                int minute = 0;
-                                hour = timePicker.getCurrentHour();
-                                minute = timePicker.getCurrentMinute();
+                                MainActivity.timepickerTimeHr = timePickerInFrg.getCurrentHour();
+                                MainActivity.timepickerTimeMin = timePickerInFrg.getCurrentMinute();
                                 TimeDialogListener activity = (TimeDialogListener) getActivity();
-                                String time = updateTime(hour,minute);
+                                String time = updateTime(MainActivity.timepickerTimeHr,MainActivity.timepickerTimeMin);
+                                saveTime(time);
                                 activity.onFinishDialog(time);
                                 ScheduleWorkoutActivity activity1 = (ScheduleWorkoutActivity) getActivity();
                                 int timeNum = activity1.getTimeNum();
@@ -106,6 +107,10 @@ public class TimePickerFragment extends DialogFragment {
                 .append(minutes).append(" ").append(timeSet).toString();
 
         return myTime;
+    }
+
+    private void saveTime(String time){
+        timeforNotification = time;
     }
 
 }
