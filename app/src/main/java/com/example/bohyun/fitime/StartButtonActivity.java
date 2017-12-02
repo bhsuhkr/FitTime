@@ -24,7 +24,7 @@ public class StartButtonActivity extends Activity {
         videoView = (VideoView) findViewById(R.id.video);
         mediaC = new MediaController(this);
         mediaC.setAnchorView(videoView);
-        String path = "android.resource://"+getPackageName()+"/"+ R.raw.AbCrnch1;
+        String path = "android.resource://"+getPackageName()+"/"+ R.raw.abcrnch_1;
         Uri uri = Uri.parse(path);
         videoView.setMediaController(mediaC);
         videoView.setVideoURI(uri);
