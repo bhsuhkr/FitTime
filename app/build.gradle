@@ -19,11 +19,7 @@ android {
         }
     }
 }
-android {
-    aaptOptions {
-        cruncherEnabled = false
-    }
-}
+
 
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
