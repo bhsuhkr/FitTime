@@ -56,11 +56,3 @@ freeline_project_description.json
 
 # Travis CI
 *.travis.yml
-
-# Gradle files
-*.gradle
-
-#Project files
-.idea/workspace.xml
-app/app.iml
-local.properties
