@@ -38,7 +38,6 @@ public class LoginActivity extends Activity {
 
         Button anonymousAuthenticationButton = (Button) findViewById(R.id.anonymous_authentication_button);
         SignInButton googleLoginButton = (SignInButton) findViewById(R.id.google_sign_in_button);
-        Button googleSignOutButton = (Button) findViewById(R.id.google_sign_out_button);
         mAuth = FirebaseAuth.getInstance();
 
         // Configure Google Sign In
@@ -61,6 +60,7 @@ public class LoginActivity extends Activity {
                                     if (task.isSuccessful()) {
                                         Log.d(TAG, "signInAnonymously:success");
                                         Toast.makeText(LoginActivity.this,"Continuing as guest", Toast.LENGTH_SHORT).show();
+                                        startActivity(new Intent(getApplicationContext(),MainActivity.class ));
                                     } else {
                                         // If sign in fails, display a message to the user.
                                         Log.w(TAG, "signInAnonymously:failure", task.getException());
@@ -73,7 +73,7 @@ public class LoginActivity extends Activity {
                 else {
                     Toast.makeText(LoginActivity.this,"Already signed in", Toast.LENGTH_SHORT).show();
                 }
-                startActivity(new Intent(getApplicationContext(),MainActivity.class ));
+                // startActivity(new Intent(getApplicationContext(),MainActivity.class ));
             }
         });
 
@@ -86,7 +86,7 @@ public class LoginActivity extends Activity {
             }
         });
 
-        googleSignOutButton.setOnClickListener(new View.OnClickListener() {
+        /* googleSignOutButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Toast.makeText(LoginActivity.this, "Signing out", Toast.LENGTH_SHORT).show();
@@ -94,6 +94,7 @@ public class LoginActivity extends Activity {
                 mAuth.getInstance().signOut();
             }
         });
+        */
     }
 
     @Override
@@ -114,9 +115,7 @@ public class LoginActivity extends Activity {
             GoogleSignInAccount account = completedTask.getResult(ApiException.class);
             if (account != null) {
                 firebaseAuthWithGoogle(account);
-                startActivity(new Intent(getApplicationContext(),MainActivity.class ));
             }
-
         } catch (ApiException e) {
             // The ApiException status code indicates the detailed failure reason.
             // Please refer to the GoogleSignInStatusCodes class reference for more information.
@@ -129,11 +128,10 @@ public class LoginActivity extends Activity {
         super.onStart();
         FirebaseUser currentUser = mAuth.getCurrentUser();
         if (currentUser != null) {
-            String currentUserName = (currentUser.getDisplayName() == "") ? "anonymous" : currentUser.getDisplayName();
-            Toast.makeText(LoginActivity.this, "Currently signed in user: " + currentUserName, Toast.LENGTH_SHORT).show();
+            startActivity(new Intent(getApplicationContext(),MainActivity.class ));
         }
         else {
-            Toast.makeText(LoginActivity.this, "No user currently signed in", Toast.LENGTH_SHORT).show();
+            // Toast.makeText(LoginActivity.this, "No user currently signed in", Toast.LENGTH_SHORT).show();
         }
     }
 
@@ -148,6 +146,9 @@ public class LoginActivity extends Activity {
                         if (task.isSuccessful()) {
                             Log.d(TAG, "signInWithCredential:success");
                             FirebaseUser user = mAuth.getCurrentUser();
+                            if (user != null) {
+                                startActivity(new Intent(getApplicationContext(),MainActivity.class ));
+                            }
                             Toast.makeText(LoginActivity.this, user.getEmail(), Toast.LENGTH_SHORT).show();
                         } else {
                             Log.w(TAG, "signInWithCredential:failure", task.getException());
