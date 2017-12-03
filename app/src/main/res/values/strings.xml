@@ -27,6 +27,8 @@
     <string name="yes">Yes</string>
     <string name="no">No</string>
     <string name="delete_button">Are you sure you would like to delete this workout?</string>
+    <string name="sign_out_button">Are you sure you would like to log out?</string>
+    <string name="sign_in_button"></string>
 
 
 </resources>

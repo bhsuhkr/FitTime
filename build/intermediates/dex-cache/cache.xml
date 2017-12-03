@@ -3,21 +3,21 @@
 
     <item
         is-multidex="true"
-        jar="C:\Project\new\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jar="/home/green/Documents/ke/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
         sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
-        <dex dex="C:\Project\new\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_82f76a8ccd34d94d3a148d3fb31f142f0e4c759e\classes.dex" />
+        <dex dex="/home/green/Documents/ke/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_ae75a3d5a68b911ab8808e4ae644ca9dd40917ee/classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="C:\Project\new\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jar="/home/green/Documents/ke/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="745c4f0fb77da6a5ec67963c6862398962058162">
-        <dex dex="C:\Project\new\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_baf2cd8beb17469efe6f41948b4700d604a262d1\classes.dex" />
+        sha1="57e9c6f5d6de530acb3871981b3752535d5a6893">
+        <dex dex="/home/green/Documents/ke/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_13aa3b49533a1df131c04b2664f284aea15e6be4/classes.dex" />
     </item>
 
 </items>

@@ -30,6 +30,11 @@ public class LoginActivity extends Activity {
     int RC_SIGN_IN = 1;
     final String firebaseClientID = "1003545776152-b6s3k5t8nq78rn8vs9nkmr2imskebtus.apps.googleusercontent.com";
     private FirebaseAuth mAuth;
+    public static boolean logOut = false;
+
+    public void signOut() {
+        logOut = true;
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -48,6 +53,12 @@ public class LoginActivity extends Activity {
 
         final GoogleSignInClient mGoogleSignInClient = GoogleSignIn.getClient(this, gso);
 
+        if (logOut) {
+            mGoogleSignInClient.signOut();
+            mAuth.signOut();
+            logOut = false;
+        }
+
 
         anonymousAuthenticationButton.setOnClickListener(new View.OnClickListener(){
             @Override
@@ -61,6 +72,7 @@ public class LoginActivity extends Activity {
                                         Log.d(TAG, "signInAnonymously:success");
                                         Toast.makeText(LoginActivity.this,"Continuing as guest", Toast.LENGTH_SHORT).show();
                                         startActivity(new Intent(getApplicationContext(),MainActivity.class ));
+                                        finish();
                                     } else {
                                         // If sign in fails, display a message to the user.
                                         Log.w(TAG, "signInAnonymously:failure", task.getException());
@@ -128,10 +140,11 @@ public class LoginActivity extends Activity {
         super.onStart();
         FirebaseUser currentUser = mAuth.getCurrentUser();
         if (currentUser != null) {
-            startActivity(new Intent(getApplicationContext(),MainActivity.class ));
+            startActivity(new Intent(getApplicationContext(),MainActivity.class));
+            finish();
         }
         else {
-            // Toast.makeText(LoginActivity.this, "No user currently signed in", Toast.LENGTH_SHORT).show();
+
         }
     }
 
@@ -148,8 +161,8 @@ public class LoginActivity extends Activity {
                             FirebaseUser user = mAuth.getCurrentUser();
                             if (user != null) {
                                 startActivity(new Intent(getApplicationContext(),MainActivity.class ));
+                                finish();
                             }
-                            Toast.makeText(LoginActivity.this, user.getEmail(), Toast.LENGTH_SHORT).show();
                         } else {
                             Log.w(TAG, "signInWithCredential:failure", task.getException());
                             Toast.makeText(LoginActivity.this, "Authentication failed.",
@@ -157,5 +170,14 @@ public class LoginActivity extends Activity {
                         }
                     }
                 });
+    }
+
+    @Override
+    public void onBackPressed() {
+        // your code.
+        Intent intent = new Intent(Intent.ACTION_MAIN);
+        intent.addCategory(Intent.CATEGORY_HOME);
+        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        startActivity(intent);
     }
 }

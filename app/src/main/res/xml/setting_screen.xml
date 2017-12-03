@@ -38,4 +38,14 @@
 
     </PreferenceCategory>
 
+    <Preference android:title="Sign Out"
+        android:key="@string/sign_out_button"
+        android:summary=""/>
+
+    <Preference android:title="Sign In with Google"
+        android:key="@string/sign_in_button"
+        android:summary=""/>
+
+
+
 </PreferenceScreen>
