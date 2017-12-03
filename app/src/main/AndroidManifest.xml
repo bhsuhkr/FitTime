@@ -35,6 +35,8 @@
         <activity android:name=".ScheduleWorkoutActivity"/>
         <activity android:name=".FullScheduleActivity"/>
         <activity android:name=".ListOfVideosActivity"/>
+        <receiver
+            android:name=".NotificationActivity"/>
         <service android:name=".FirebaseMessagingService">
             <intent-filter>
                 <action android:name="com.google.firebase.MESSAGING_EVENT"/>

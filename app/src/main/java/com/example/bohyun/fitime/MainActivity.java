@@ -10,6 +10,8 @@ import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.TimePicker;
+
 
 public class MainActivity extends AppCompatActivity {
     private BottomNavigationView mBottomNavigationItem;
@@ -19,6 +21,13 @@ public class MainActivity extends AppCompatActivity {
     private Fragment exeFrg;
     private Fragment schFrg;
     private FragmentManager fragmentManager;
+    public static TimePicker timepicker;
+    public static int timepickerTimeHr;
+    public static int timepickerTimeMin;
+    public static int sendTimeToHomeHr;
+    public static int sendTimeToHomeMin;
+    public static String dayOfTheWeek;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,8 +45,6 @@ public class MainActivity extends AppCompatActivity {
         fragmentManager = getSupportFragmentManager();
         FragmentTransaction transaction = fragmentManager.beginTransaction();
         transaction.replace(R.id.main_container, fragment).commit();
-
-
 
         mBottomNavigationItem = (BottomNavigationView) findViewById(R.id.bottom_navigation);
         mBottomNavigationItem.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
@@ -62,8 +69,8 @@ public class MainActivity extends AppCompatActivity {
                 return false;
             }
         });
-    }
 
+    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -80,8 +87,6 @@ public class MainActivity extends AppCompatActivity {
                 this.startActivity(intent);
                 break;
         }
-
         return true;
     }
-
 }
