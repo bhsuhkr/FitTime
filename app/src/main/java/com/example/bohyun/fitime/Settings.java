@@ -79,7 +79,11 @@ public class Settings extends PreferenceActivity {
         super.onStart();
         FirebaseUser currentUser = FirebaseAuth.getInstance().getCurrentUser();
         if (currentUser != null) {
-            if (!currentUser.getEmail().contains("@")) {
+            String email = currentUser.getEmail();
+            if (email == null) {
+                email = "";
+            }
+            if (!email.contains("@")) {
                 Preference somePreference = findPreference(getString(R.string.sign_out_button));
                 PreferenceScreen preferenceScreen = getPreferenceScreen();
                 if (somePreference != null) {

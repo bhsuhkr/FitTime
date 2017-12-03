@@ -3,21 +3,21 @@
 
     <item
         is-multidex="true"
-        jar="/home/green/Documents/ke/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jar="/home/green/Documents/ltsterBranch/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
         sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
-        <dex dex="/home/green/Documents/ke/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_ae75a3d5a68b911ab8808e4ae644ca9dd40917ee/classes.dex" />
+        <dex dex="/home/green/Documents/ltsterBranch/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_38efea7c35116dabb76179c4c68950a3e4d4e860/classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="/home/green/Documents/ke/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jar="/home/green/Documents/ltsterBranch/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="57e9c6f5d6de530acb3871981b3752535d5a6893">
-        <dex dex="/home/green/Documents/ke/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_13aa3b49533a1df131c04b2664f284aea15e6be4/classes.dex" />
+        sha1="9cfdbc161f8359e8bca556925bd504bb4083e1d4">
+        <dex dex="/home/green/Documents/ltsterBranch/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_fa0f194fc1f23f761cf753a3bcc1d93e87982b42/classes.dex" />
     </item>
 
 </items>
