@@ -12,9 +12,6 @@ import android.widget.Toast;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Created by zschr on 11/29/2017.
- */
 
 public class ViewRecWorkoutsActivity extends Activity{
     List<Exercise> exerciseList;
