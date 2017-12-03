@@ -27,6 +27,15 @@
     <string name="yes">Yes</string>
     <string name="no">No</string>
     <string name="delete_button">Are you sure you would like to delete this workout?</string>
+    <string-array name="popup_item">
+        <item>Workout 1</item>
+        <item>Workout 2</item>
+        <item>Workout 3</item>
+        <item>Workout 4</item>
+        <item>Workout 5</item>
+        <item>Workout 6</item>
+
+    </string-array>
 
 
 </resources>
