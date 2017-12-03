@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+        android:title="Workout Time">
+
+        <EditTextPreference
+            android:id="@+id/daily_goal"
+            android:key="daily_goal"
+            android:title="Daily Goal"
+            android:summary="The number of sessions per day"
+            android:dialogTitle="The number of sessions per day"/>
+
+        <EditTextPreference
+            android:id="@+id/session_goal"
+            android:key="session_goal"
+            android:title="Session Goal"
+            android:summary="The amount of time for each session"
+            android:dialogTitle="The amount of time for each session (minutes)"/>
+
+        <EditTextPreference
+            android:id="@+id/rest_time"
+            android:key="rest_time"
+            android:title="Rest Time"
+            android:summary="The rest time between each session"
+            android:dialogTitle="The rest time between each session (minutes)"/>
+
+        <EditTextPreference
+            android:id="@+id/start_time"
+            android:key="start_time"
+            android:title="Start Time"
+            android:summary="First session of the day"
+            />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="Playlist (Select Default Playlist)">
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

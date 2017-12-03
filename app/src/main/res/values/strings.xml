@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">FitTime</string>
+    <string name="select_playlists1">Select Playlist 1</string>
+    <string name="select_playlists2">Select Playlist 2</string>
+    <string name="select_playlists3">Select Playlist 3</string>
+    <string name="select_time1">Select Playlist 1 Time</string>
+    <string name="select_time2">Select Playlist 2 Time</string>
+    <string name="select_time3">Select Playlist 3 Time</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="clear_all">Clear All</string>
+    <string name="monday">M</string>
+    <string name="tuesday">T</string>
+    <string name="wednesday">W</string>
+    <string name="thursday">Th</string>
+    <string name="friday">F</string>
+    <string name="saturday">S</string>
+    <string name="sunday">Su</string>
+    <string name="day_m">Monday, </string>
+    <string name="day_t">Tuesday, </string>
+    <string name="day_w">Wednesday, </string>
+    <string name="day_th">Thursday, </string>
+    <string name="day_f">Friday, </string>
+    <string name="day_s">Saturday, </string>
+    <string name="day_su">Sunday, </string>
+    <string name="dialog_two_button">Workout already exists, would you like to override?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="delete_button">Are you sure you would like to delete this workout?</string>
+
+
+</resources>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical"
+    tools:context="com.example.bohyun.fitime.MainActivity">
+
+
+    <Button
+        android:id="@+id/myExercises"
+        android:layout_width="match_parent"
+        android:layout_height="152dp"
+        android:text="My Exercises" />
+
+    <Button
+        android:id="@+id/recExercises"
+        android:layout_width="match_parent"
+        android:layout_height="157dp"
+        android:text="Recommended Exercises" />
+</LinearLayout>
