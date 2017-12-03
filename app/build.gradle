@@ -20,7 +20,7 @@ android {
     }
 }
 android {
-    aaptOptions.cruncherEnabled = false;
+    aaptOptions.cruncherEnabled = false
 }
 
 dependencies {
