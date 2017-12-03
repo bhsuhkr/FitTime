@@ -3,57 +3,21 @@
 
     <item
         is-multidex="true"
-        jar="/home/green/Documents/ltstBranch/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jar="C:\Project\startfromdev\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
         sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
-        <dex dex="/home/green/Documents/ltstBranch/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_eafaec09ab6a48476b3316b58279e2bd5d3d6599/classes.dex" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/green/.android/build-cache/66dd6dacdeb8dfbd4c1e02c999a9cea2ce2eaa2a/output/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.2"
-        sha1="d29714cc76b38157e3cbd034c66e1ec808eb4c19">
-        <dex dex="/home/green/Documents/ltstBranch/app/build/intermediates/pre-dexed/debug/classes_d6aaf2b432071bebe98b29a99b29d162e2204d48.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/green/.android/build-cache/d27ff833477bc1147df9f5e8ba726ab715e236ee/output/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.2"
-        sha1="53a420cd4f49274db6bd43475f8006ba67ef6bbd">
-        <dex dex="/home/green/Documents/ltstBranch/app/build/intermediates/pre-dexed/debug/classes_68c942a2f1d837f49e15bcf1ff443e0ed33e52da.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/green/.android/build-cache/65a4dd5ffd48fb7694632f9a20aead32bacee9b4/output/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.2"
-        sha1="8bc45ce1f63d1a391fd38b32a201be5a42f9c95d">
-        <dex dex="/home/green/Documents/ltstBranch/app/build/intermediates/pre-dexed/debug/classes_ba9bdc8b4cd071adcb3f5f27949fc01c7208610a.jar" />
+        <dex dex="C:\Project\startfromdev\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_657108b8289443cb67ec2c07df6074470590ce4e\classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="/home/green/Documents/ltstBranch/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jar="C:\Project\startfromdev\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="5338a0ad070d825adca90a55998393da452e2fea">
-        <dex dex="/home/green/Documents/ltstBranch/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_dcaa2a6fa425ba02b030fcda6775c0c2249c1f9c/classes.dex" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/green/.android/build-cache/24b5e0ad23029341acfa57b994f830e7e0b598e6/output/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.2"
-        sha1="9b8544d0c4d3a508ffc7da674ac79d5dc5d79395">
-        <dex dex="/home/green/Documents/ltstBranch/app/build/intermediates/pre-dexed/debug/classes_fececea74ef9148dc1570e0235112d4a02ee8078.jar" />
+        sha1="fdda4fd5fefc982d8fc2c9aee29c9205905402ac">
+        <dex dex="C:\Project\startfromdev\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_a16074ec8b626c7db8263f4f4807dfc67189eb02\classes.dex" />
     </item>
 
 </items>
