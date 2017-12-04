@@ -92,6 +92,7 @@ public class ScheduleWorkoutActivity extends AppCompatActivity implements TimePi
         ToggleButton ftoggle = (ToggleButton) findViewById(R.id.ftoggle);
         ToggleButton stoggle = (ToggleButton) findViewById(R.id.stoggle);
         ToggleButton sutoggle = (ToggleButton) findViewById(R.id.sutoggle);
+        MainActivity.checkedDays = new ArrayList<>();
 
 
         mtoggle.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
