@@ -2,10 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/ExerFinal.iml" filepath="$PROJECT_DIR$/ExerFinal.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Development-finalfinal.iml" filepath="$PROJECT_DIR$/Development-finalfinal.iml" />
+      <module fileurl="file://C:\Users\zschr\Desktop\Development-finalfinal\ExerFinal.iml" filepath="C:\Users\zschr\Desktop\Development-finalfinal\ExerFinal.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/latest.iml" filepath="$PROJECT_DIR$/latest.iml" />
-      <module fileurl="file://$PROJECT_DIR$/../../../../../Topa/Desktop/latest/login.iml" filepath="$PROJECT_DIR$/../../../../../Topa/Desktop/latest/login.iml" />
+      <module fileurl="file://C:\Users\zschr\Desktop\Development-finalfinal\latest.iml" filepath="C:\Users\zschr\Desktop\Development-finalfinal\latest.iml" />
+      <module fileurl="file://C:\..\Topa\Desktop\latest\login.iml" filepath="C:\..\Topa\Desktop\latest\login.iml" />
     </modules>
   </component>
 </project>

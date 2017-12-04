@@ -349,7 +349,7 @@ public class ScheduleWorkoutActivity extends AppCompatActivity implements TimePi
                         // ...
                     }
                 });
-                Toast.makeText(ScheduleWorkoutActivity.this, Boolean.toString(dayExists1), Toast.LENGTH_SHORT).show();
+//                Toast.makeText(ScheduleWorkoutActivity.this, Boolean.toString(dayExists1), Toast.LENGTH_SHORT).show();
 //                    mDatabase.child("schedule").child(userId).child("Day").child(day).child("Playlist 1").child("PlaylistName").setValue(dbPlaylist1);
 //                    mDatabase.child("schedule").child(userId).child("Day").child(day).child("Playlist 1").child("Time").setValue(dbTime1);
 //                    mDatabase.child("schedule").child(userId).child("Day").child(day).child("Playlist 2").child("PlaylistName").setValue(dbPlaylist2);
