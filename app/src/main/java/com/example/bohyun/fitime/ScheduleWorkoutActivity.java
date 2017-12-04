@@ -461,7 +461,6 @@ public class ScheduleWorkoutActivity extends AppCompatActivity implements TimePi
     }
 
     private void setAlarm(){
-        Toast.makeText(this, "Hour: " + MainActivity.sendTimeToHomeHr + " Min: " + MainActivity.sendTimeToHomeMin, Toast.LENGTH_SHORT).show();
         int hr = MainActivity.sendTimeToHomeHr;
         int min = MainActivity.sendTimeToHomeMin;
         Calendar cur_cal = new GregorianCalendar();
