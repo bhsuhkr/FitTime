@@ -53,4 +53,25 @@
         <item>11:00 PM</item>
         <item>12:00 PM</item>
     </string-array>
+
+    <string name="exerType_prompt">Choose an exercise type</string>
+
+    <string-array name="exerType">
+        <item>Upper Body</item>
+        <item>Lower Body</item>
+        <item>Core</item>
+        <item>Cardio</item>
+        <item>Other</item>
+
+    </string-array>
+    <string-array name="popup_item">
+        <item>Exercise 1</item>
+        <item>Exercise 2</item>
+        <item>Exercise 3</item>
+        <item>Exercise 4</item>
+        <item>Exercise 5</item>
+        <item>Exercise 6</item>
+
+    </string-array>
+
 </resources>

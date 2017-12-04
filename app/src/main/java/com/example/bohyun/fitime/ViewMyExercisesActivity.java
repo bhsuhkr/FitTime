@@ -43,7 +43,6 @@ public class ViewMyExercisesActivity extends Activity{
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_view_my_exercises);
-        exerciseList = new ArrayList<>();
         //initializing objects
         listView = (ListView) findViewById(R.id.mylistView);
         addButton = (FloatingActionButton) findViewById(R.id.floatingActionButton);
@@ -53,6 +52,7 @@ public class ViewMyExercisesActivity extends Activity{
         mDatabase.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
+                exerciseList = new ArrayList<>();
                 for (DataSnapshot postSnapshot : dataSnapshot.getChildren()) {
                     String name = (String) postSnapshot.getKey();
                     String description = (String) postSnapshot.child("description").getValue();
@@ -63,7 +63,7 @@ public class ViewMyExercisesActivity extends Activity{
                     //Exercise exercise = new Exercise(name, description, type);
                     exerciseList.add(new Exercise(name, description, type));
 //                    Toast.makeText(ViewMyExercisesActivity.this, Arrays.toString(MainActivity.exerciseList.toArray()), Toast.LENGTH_SHORT).show();
-                    }
+                }
                 MyListAdapter adapter = new MyListAdapter(ViewMyExercisesActivity.this, R.layout.my_custom_list, exerciseList);
 
                 //attaching adapter to the listview
@@ -74,12 +74,8 @@ public class ViewMyExercisesActivity extends Activity{
                     public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                         TextView v = (TextView) view.findViewById(R.id.textViewName);
                         Toast.makeText(getApplicationContext(), "selected Item Name is " + v.getText(), Toast.LENGTH_LONG).show();
+                        ViewExerciseActivity.exercise_clicked = v.getText().toString();
                         startActivity(new Intent(ViewMyExercisesActivity.this, ViewExerciseActivity.class));
-                    }
-                });
-                addButton.setOnClickListener(new View.OnClickListener() {
-                    public void onClick(View v) {
-                        startActivity(new Intent(ViewMyExercisesActivity.this, AddExerciseActivity.class));
                     }
                 });
             }
@@ -89,6 +85,12 @@ public class ViewMyExercisesActivity extends Activity{
                 // Getting Post failed, log a message
                 Log.w(TAG, "loadPost:onCancelled", databaseError.toException());
                 // ...
+            }
+        });
+
+        addButton.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                startActivity(new Intent(ViewMyExercisesActivity.this, AddExerciseActivity.class));
             }
         });
 

@@ -22,7 +22,7 @@ public class Workout {
         return description;
     }
 
-    public String getExercises() {
+    public String getWorkouts() {
             return exercises;
     }
 }
