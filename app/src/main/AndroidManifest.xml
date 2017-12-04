@@ -42,6 +42,8 @@
         <activity android:name=".ViewMyWorkoutsActivity"/>
         <activity android:name=".ViewWorkoutActivity"/>
         <activity android:name=".AddWorkoutActivity"/>
+        <receiver
+            android:name=".NotificationActivity"/>
 
     </application>
 

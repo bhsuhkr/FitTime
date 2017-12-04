@@ -49,63 +49,63 @@
 
     </FrameLayout>
 
-    <FrameLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/btnPlaylistLayout2"
-        android:layout_below="@+id/btnPlaylistLayout1">
-        <Button
-            android:id="@+id/btnPlaylist2"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:alpha="0"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            android:layout_below="@+id/workout"/>
-        <TextView
-            android:id="@+id/PlaylistSelected2"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:paddingLeft="10dp"
-            android:paddingRight="100dp"
-            android:paddingTop="10dp"
-            android:paddingBottom="10dp"
-            android:text="@string/select_playlists2"
-            android:textColor="@color/colorPrimary"
-            android:textSize="15sp"
-            android:textStyle="italic"
-            android:layout_below="@+id/workout"/>
+    <!--<FrameLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:id="@+id/btnPlaylistLayout2"-->
+        <!--android:layout_below="@+id/btnPlaylistLayout1">-->
+        <!--<Button-->
+            <!--android:id="@+id/btnPlaylist2"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:alpha="0"-->
+            <!--android:layout_alignParentLeft="true"-->
+            <!--android:layout_alignParentStart="true"-->
+            <!--android:layout_below="@+id/workout"/>-->
+        <!--<TextView-->
+            <!--android:id="@+id/PlaylistSelected2"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:paddingLeft="10dp"-->
+            <!--android:paddingRight="100dp"-->
+            <!--android:paddingTop="10dp"-->
+            <!--android:paddingBottom="10dp"-->
+            <!--android:text="@string/select_playlists2"-->
+            <!--android:textColor="@color/colorPrimary"-->
+            <!--android:textSize="15sp"-->
+            <!--android:textStyle="italic"-->
+            <!--android:layout_below="@+id/workout"/>-->
 
-    </FrameLayout>
+    <!--</FrameLayout>-->
 
-    <FrameLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/btnPlaylistLayout3"
-        android:layout_below="@+id/btnPlaylistLayout2">
-        <Button
-            android:id="@+id/btnPlaylist3"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:alpha="0"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            android:layout_below="@+id/workout"/>
-        <TextView
-            android:id="@+id/PlaylistSelected3"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:paddingLeft="10dp"
-            android:paddingRight="100dp"
-            android:paddingTop="10dp"
-            android:paddingBottom="10dp"
-            android:text="@string/select_playlists3"
-            android:textColor="@color/colorPrimary"
-            android:textSize="15sp"
-            android:textStyle="italic"
-            android:layout_below="@+id/workout"/>
+    <!--<FrameLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:id="@+id/btnPlaylistLayout3"-->
+        <!--android:layout_below="@+id/btnPlaylistLayout2">-->
+        <!--<Button-->
+            <!--android:id="@+id/btnPlaylist3"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:alpha="0"-->
+            <!--android:layout_alignParentLeft="true"-->
+            <!--android:layout_alignParentStart="true"-->
+            <!--android:layout_below="@+id/workout"/>-->
+        <!--<TextView-->
+            <!--android:id="@+id/PlaylistSelected3"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:paddingLeft="10dp"-->
+            <!--android:paddingRight="100dp"-->
+            <!--android:paddingTop="10dp"-->
+            <!--android:paddingBottom="10dp"-->
+            <!--android:text="@string/select_playlists3"-->
+            <!--android:textColor="@color/colorPrimary"-->
+            <!--android:textSize="15sp"-->
+            <!--android:textStyle="italic"-->
+            <!--android:layout_below="@+id/workout"/>-->
 
-    </FrameLayout>
+    <!--</FrameLayout>-->
 
     <TextView
         android:id="@+id/days"
@@ -120,7 +120,7 @@
         android:layout_marginRight="5dp"
         android:layout_marginTop="10dp"
         android:layout_marginBottom="5dp"
-        android:layout_below="@+id/btnPlaylistLayout3"/>
+        android:layout_below="@+id/btnPlaylistLayout1"/>
     <ToggleButton
         android:id="@+id/mtoggle"
         android:layout_width="40dp"
@@ -250,65 +250,65 @@
 
     </FrameLayout>
 
-    <FrameLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/timePickerLayout2"
-        android:layout_below="@+id/timePickerLayout1">
-        <Button
-            android:id="@+id/btnTime2"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:alpha="0"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"/>
-        <TextView
-            android:id="@+id/timeSelected2"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:paddingLeft="10dp"
-            android:paddingRight="100dp"
-            android:paddingTop="10dp"
-            android:paddingBottom="10dp"
-            android:text="@string/select_time2"
-            android:textColor="@color/colorPrimary"
-            android:textSize="15sp"
-            android:textStyle="italic"/>
+    <!--<FrameLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:id="@+id/timePickerLayout2"-->
+        <!--android:layout_below="@+id/timePickerLayout1">-->
+        <!--<Button-->
+            <!--android:id="@+id/btnTime2"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:alpha="0"-->
+            <!--android:layout_alignParentLeft="true"-->
+            <!--android:layout_alignParentStart="true"/>-->
+        <!--<TextView-->
+            <!--android:id="@+id/timeSelected2"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:paddingLeft="10dp"-->
+            <!--android:paddingRight="100dp"-->
+            <!--android:paddingTop="10dp"-->
+            <!--android:paddingBottom="10dp"-->
+            <!--android:text="@string/select_time2"-->
+            <!--android:textColor="@color/colorPrimary"-->
+            <!--android:textSize="15sp"-->
+            <!--android:textStyle="italic"/>-->
 
-    </FrameLayout>
+    <!--</FrameLayout>-->
 
-    <FrameLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/timePickerLayout3"
-        android:layout_below="@+id/timePickerLayout2">
-        <Button
-            android:id="@+id/btnTime3"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:alpha="0"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"/>
-        <TextView
-            android:id="@+id/timeSelected3"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:paddingLeft="10dp"
-            android:paddingRight="100dp"
-            android:paddingTop="10dp"
-            android:paddingBottom="10dp"
-            android:text="@string/select_time3"
-            android:textColor="@color/colorPrimary"
-            android:textSize="15sp"
-            android:textStyle="italic"/>
+    <!--<FrameLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:id="@+id/timePickerLayout3"-->
+        <!--android:layout_below="@+id/timePickerLayout2">-->
+        <!--<Button-->
+            <!--android:id="@+id/btnTime3"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:alpha="0"-->
+            <!--android:layout_alignParentLeft="true"-->
+            <!--android:layout_alignParentStart="true"/>-->
+        <!--<TextView-->
+            <!--android:id="@+id/timeSelected3"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:paddingLeft="10dp"-->
+            <!--android:paddingRight="100dp"-->
+            <!--android:paddingTop="10dp"-->
+            <!--android:paddingBottom="10dp"-->
+            <!--android:text="@string/select_time3"-->
+            <!--android:textColor="@color/colorPrimary"-->
+            <!--android:textSize="15sp"-->
+            <!--android:textStyle="italic"/>-->
 
-    </FrameLayout>
+    <!--</FrameLayout>-->
 
     <Button
         android:id="@+id/schedule_workout"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:layout_below="@+id/timePickerLayout3"
+        android:layout_below="@+id/timePickerLayout1"
         android:background="@drawable/full_schedule_button"
         android:layout_margin="5dp"
         android:text="Schedule Workout"
