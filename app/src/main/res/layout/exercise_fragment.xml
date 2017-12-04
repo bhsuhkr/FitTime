@@ -7,32 +7,16 @@
     android:orientation="vertical"
     tools:context="com.example.bohyun.fitime.MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Exercises"
-        android:textStyle="bold"
-        android:textSize="40dp"
-        android:layout_gravity="center|top"/>
-
-    <EditText
-        android:id="@+id/exerName"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Input exercise name and description" />
 
     <Button
-        android:id="@+id/addExercise"
+        android:id="@+id/myExercises"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Add Exercise" />
+        android:layout_height="152dp"
+        android:text="My Exercises" />
 
-    <ListView
-        android:id="@+id/exerList"
+    <Button
+        android:id="@+id/recExercises"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
-
-
+        android:layout_height="157dp"
+        android:text="Recommended Exercises" />
 </LinearLayout>

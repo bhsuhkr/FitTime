@@ -1,20 +1,15 @@
 package com.example.bohyun.fitime;
 
-import android.support.v4.app.Fragment;
+import android.content.Intent;
 import android.os.Bundle;
+import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ArrayAdapter;
-import android.widget.ListView;
-import android.widget.Toast;
 import android.widget.Button;
-import android.widget.EditText;
-import java.util.ArrayList;
+import android.widget.Toast;
 
-public class ExerciseFragment extends Fragment{
-    Button save;
-    final ArrayList<String> addArray = new ArrayList<String>();
+public class ExerciseFragment extends Fragment {
 
     public ExerciseFragment() {
     }
@@ -23,43 +18,25 @@ public class ExerciseFragment extends Fragment{
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.exercise_fragment, container, false);
 
-        final EditText txt;
-        final ListView show;
-
-        txt = (EditText)view.findViewById(R.id.exerName);
-        show = (ListView)view.findViewById(R.id.exerList);
-        save = (Button)view.findViewById(R.id.addExercise);
-
-        //display all contents from array
-        if(!addArray.isEmpty()) {
-            for (int i = 0; i < addArray.size(); i++) {
-                ArrayAdapter<String> adapter = new ArrayAdapter<String>(getActivity(), android.R.layout.simple_list_item_1, addArray);
-                show.setAdapter(adapter);
-            }
-        }
-
-        save.setOnClickListener(new View.OnClickListener(){
-
+        Button recExercises = (Button) view.findViewById(R.id.recExercises);
+        recExercises.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String getInput = txt.getText().toString();
+                Toast.makeText(getActivity(), "Add Exercise Clicked", Toast.LENGTH_SHORT).show();
+                Intent intentLoadNewActivity = new Intent(getActivity(), ViewRecExercisesActivity.class);
+                startActivity(intentLoadNewActivity);
+            }
+        });
 
-                if(addArray.contains(getInput)){
-                    Toast.makeText(getActivity(),"Exercise already exists", Toast.LENGTH_LONG).show();
-                }
-                else if (getInput == null || getInput.trim().equals("")){
-                    Toast.makeText(getActivity(),"Input field is empty.", Toast.LENGTH_LONG).show();
-                }
-                else{
-                    addArray.add(getInput);
-                    ArrayAdapter<String> adapter = new ArrayAdapter<String>(getActivity(), android.R.layout.simple_list_item_1, addArray);
-                    show.setAdapter(adapter);
-                    ((EditText)getView().findViewById(R.id.exerName)).setText(" ");
-                }
+        Button myExercises = (Button) view.findViewById(R.id.myExercises);
+        myExercises.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(getActivity(), "View My Exercises", Toast.LENGTH_SHORT).show();
+                Intent intentLoadNewActivity = new Intent(getActivity(), ViewMyExercisesActivity.class);
+                startActivity(intentLoadNewActivity);
             }
         });
         return view;
     }
-
-
 }
