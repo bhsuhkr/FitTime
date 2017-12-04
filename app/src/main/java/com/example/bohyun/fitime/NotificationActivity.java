@@ -14,7 +14,7 @@ public class NotificationActivity extends BroadcastReceiver{
     @Override
     public void onReceive(Context context, Intent intent){
         NotificationManager notificationManager = (NotificationManager) context.getSystemService(Context.NOTIFICATION_SERVICE);
-        Intent repeating_intent = new Intent(context, MainActivity.class);
+        Intent repeating_intent = new Intent(context, StartButtonActivity.class);
         repeating_intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
 
         PendingIntent pendingIntent = PendingIntent.getActivity(context, 100, repeating_intent, PendingIntent.FLAG_UPDATE_CURRENT);
@@ -23,7 +23,7 @@ public class NotificationActivity extends BroadcastReceiver{
 
         NotificationCompat.Builder builder = new NotificationCompat.Builder(context)
                 .setContentIntent(pendingIntent)
-                .setSmallIcon(com.example.bohyun.fitime.R.drawable.ic_launcher)
+                .setSmallIcon(R.drawable.ic_launcher)
                 .setSound(notificationSound)
                 .setContentTitle("FitTime")
                 .setContentText("time to work out!")

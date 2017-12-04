@@ -1,16 +1,18 @@
 package com.example.bohyun.fitime;
 
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentManager;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.TimePicker;
+
+import java.util.ArrayList;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -27,6 +29,7 @@ public class MainActivity extends AppCompatActivity {
     public static int sendTimeToHomeHr;
     public static int sendTimeToHomeMin;
     public static String dayOfTheWeek;
+    public static ArrayList<String> checkedDays = new ArrayList<>();
 
 
     @Override
@@ -89,14 +92,4 @@ public class MainActivity extends AppCompatActivity {
         }
         return true;
     }
-
-    @Override
-    public void onBackPressed() {
-        // your code.
-        Intent intent = new Intent(Intent.ACTION_MAIN);
-        intent.addCategory(Intent.CATEGORY_HOME);
-        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-        startActivity(intent);
-    }
-
 }

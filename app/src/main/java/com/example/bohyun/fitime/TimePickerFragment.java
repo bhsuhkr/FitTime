@@ -8,6 +8,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.TextView;
 import android.widget.TimePicker;
+
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
@@ -50,7 +51,7 @@ public class TimePickerFragment extends DialogFragment {
                                 MainActivity.timepickerTimeHr = timePickerInFrg.getCurrentHour();
                                 MainActivity.timepickerTimeMin = timePickerInFrg.getCurrentMinute();
                                 TimeDialogListener activity = (TimeDialogListener) getActivity();
-                                String time = updateTime(MainActivity.timepickerTimeHr,MainActivity.timepickerTimeMin);
+                                String time = updateTime(MainActivity.timepickerTimeHr, MainActivity.timepickerTimeMin);
                                 saveTime(time);
                                 activity.onFinishDialog(time);
                                 ScheduleWorkoutActivity activity1 = (ScheduleWorkoutActivity) getActivity();
@@ -58,14 +59,6 @@ public class TimePickerFragment extends DialogFragment {
 
                                 if(timeNum==1){
                                     TextView textview = (TextView)getActivity().findViewById(R.id.timeSelected1);
-                                    textview.setText(time);
-                                }
-                                else if(timeNum==2){
-                                    TextView textview = (TextView)getActivity().findViewById(R.id.timeSelected2);
-                                    textview.setText(time);
-                                }
-                                else if(timeNum==3){
-                                    TextView textview = (TextView)getActivity().findViewById(R.id.timeSelected3);
                                     textview.setText(time);
                                 }
                                 else{}

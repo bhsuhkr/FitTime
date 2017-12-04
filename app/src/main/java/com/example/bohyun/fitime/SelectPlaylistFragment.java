@@ -1,9 +1,5 @@
 package com.example.bohyun.fitime;
 
-/**
- * Created by zschr on 11/14/2017.
- */
-
 
 import android.app.Dialog;
 import android.content.DialogInterface;
@@ -30,14 +26,14 @@ public class SelectPlaylistFragment extends DialogFragment {
                             TextView textview = (TextView)getActivity().findViewById(R.id.PlaylistSelected1);
                             textview.setText(getResources().getStringArray(R.array.playlists)[which]);
                         }
-                        else if(playlist=="Playlist 2"){
-                            TextView textview = (TextView)getActivity().findViewById(R.id.PlaylistSelected2);
-                            textview.setText(getResources().getStringArray(R.array.playlists)[which]);
-                        }
-                        else if(playlist=="Playlist 3"){
-                            TextView textview = (TextView)getActivity().findViewById(R.id.PlaylistSelected3);
-                            textview.setText(getResources().getStringArray(R.array.playlists)[which]);
-                        }
+//                        else if(playlist=="Playlist 2"){
+//                            TextView textview = (TextView)getActivity().findViewById(R.id.PlaylistSelected2);
+//                            textview.setText(getResources().getStringArray(R.array.playlists)[which]);
+//                        }
+//                        else if(playlist=="Playlist 3"){
+//                            TextView textview = (TextView)getActivity().findViewById(R.id.PlaylistSelected3);
+//                            textview.setText(getResources().getStringArray(R.array.playlists)[which]);
+//                        }
                         else{}
                         activity.onFinishPlaylistDialog(getResources().getStringArray(R.array.playlists)[which], playlist);
                         Toast.makeText(getActivity(), "You clicked " + getResources().getStringArray(R.array.playlists)[which], Toast.LENGTH_SHORT).show();
