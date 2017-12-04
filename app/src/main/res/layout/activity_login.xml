@@ -1,45 +1,61 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
-
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent"
+    >
 
     <TextView
+        android:id="@+id/fitTimeTextView"
+        android:text="FitTime"
+        android:textStyle="bold|italic"
+        android:textSize="40dp"
+        android:textColor="@color/colorBlack"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center|top"
-        android:text="Login"
-        android:textSize="40dp"
-        android:textStyle="bold" />
+        android:layout_centerHorizontal="true"
+        android:paddingTop="70dp"/>
 
-    <EditText
-        android:id="@+id/editText"
+    <ImageView
+        android:id="@+id/images"
+        android:layout_height="100dp"
+        android:layout_width="100dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/lognin"
+        android:layout_below="@+id/fitTimeTextView"/>
+
+    <TextView
+        android:id="@+id/blank"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/images"
+        android:padding="60dp"/>
+
+    <com.google.android.gms.common.SignInButton
+        android:id="@+id/google_sign_in_button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:contentDescription=""
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:selectAllOnFocus="false" />
+        android:layout_below="@+id/blank"
+        />
 
-    <EditText
-        android:id="@+id/editText2"
-        android:layout_width="match_parent"
+    <TextView
+        android:id="@+id/blank2"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="textPassword" />
+        android:layout_below="@+id/google_sign_in_button"
+        android:padding=".5dp"/>
 
     <Button
-        android:id="@+id/login_button"
+        android:id="@+id/anonymous_authentication_button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Login"
-        android:onClick="login"/>
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/blank2"
+        android:background="@drawable/roundedbutton"
+        android:text="Continue without signing in" />
 
-    <Button
-        android:id="@+id/skip_button"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Continue as guest" />
 
-</LinearLayout>
+
+</RelativeLayout>

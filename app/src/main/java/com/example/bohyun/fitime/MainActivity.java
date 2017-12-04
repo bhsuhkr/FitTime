@@ -1,29 +1,50 @@
 package com.example.bohyun.fitime;
 
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentManager;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.TimePicker;
+
+import java.util.ArrayList;
+
 
 public class MainActivity extends AppCompatActivity {
     private BottomNavigationView mBottomNavigationItem;
     private Fragment fragment;
+    private Fragment homeFrg;
+    private Fragment plyFrg;
+    private Fragment exeFrg;
+    private Fragment schFrg;
     private FragmentManager fragmentManager;
+    public static TimePicker timepicker;
+    public static int timepickerTimeHr;
+    public static int timepickerTimeMin;
+    public static int sendTimeToHomeHr;
+    public static int sendTimeToHomeMin;
+    public static String dayOfTheWeek;
+    public static ArrayList<String> checkedDays = new ArrayList<>();
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        homeFrg = new HomeFragment();
+        plyFrg = new PlaylistFragment();
+        exeFrg = new ExerciseFragment();
+        schFrg = new CalendarFragment();
+
+        fragment = homeFrg;
 
         //Daily View || Start View
-        fragment = new HomeFragment();
         fragmentManager = getSupportFragmentManager();
         FragmentTransaction transaction = fragmentManager.beginTransaction();
         transaction.replace(R.id.main_container, fragment).commit();
@@ -34,16 +55,16 @@ public class MainActivity extends AppCompatActivity {
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                 switch(item.getItemId()){
                     case R.id.daily_menu:
-                        fragment = new HomeFragment();
+                        fragment = homeFrg;
                         break;
                     case R.id.playlist_menu:
-                        fragment = new PlaylistFragment();
+                        fragment = plyFrg;
                         break;
                     case R.id.exercise_menu:
-                        fragment = new ExerciseFragment();
+                        fragment = exeFrg;
                         break;
                     case R.id.info_menu:
-                        fragment = new CalendarFragment();
+                        fragment = schFrg;
                         break;
                 }
                 final FragmentTransaction transaction = fragmentManager.beginTransaction();
@@ -51,6 +72,7 @@ public class MainActivity extends AppCompatActivity {
                 return false;
             }
         });
+
     }
 
     @Override
@@ -68,8 +90,6 @@ public class MainActivity extends AppCompatActivity {
                 this.startActivity(intent);
                 break;
         }
-
         return true;
     }
-
 }

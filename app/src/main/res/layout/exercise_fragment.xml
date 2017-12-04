@@ -4,34 +4,51 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/background"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    tools:context="com.example.bohyun.fitime.MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Exercises"
-        android:textStyle="bold"
-        android:textSize="40dp"
-        android:layout_gravity="center|top"/>
-
-    <EditText
-        android:id="@+id/exerName"
+    <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Input exercise name and description" />
-
-    <Button
-        android:id="@+id/addExercise"
+        android:layout_height="wrap_content">
+    <ImageButton
+        android:id="@+id/myExercises"
+        android:src="@drawable/exercise_button"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Add Exercise" />
+        android:scaleType="fitXY"
+        android:adjustViewBounds="true"
+        android:layout_height="200dp"
+        android:background="@null"
+        android:text="My Exercises" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="My Exercises"
+            android:textSize="40dp"
+            android:textStyle="italic"
+            android:paddingLeft="10dp"
+            android:textColor="@color/colorBlack"/>
+    </FrameLayout>
 
-    <ListView
-        android:id="@+id/exerList"
+
+    <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
-
-
+        android:layout_height="wrap_content">
+    <ImageButton
+        android:id="@+id/recExercises"
+        android:src="@drawable/exercise_rec"
+        android:layout_width="match_parent"
+        android:scaleType="fitXY"
+        android:adjustViewBounds="true"
+        android:layout_height="200dp"
+        android:background="@null"
+        android:text="Recommended Exercises" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Recommended Exercises"
+            android:textSize="40dp"
+            android:textStyle="italic"
+            android:paddingLeft="10dp"
+            android:textColor="@color/colorBlack"/>
+    </FrameLayout>
 </LinearLayout>
