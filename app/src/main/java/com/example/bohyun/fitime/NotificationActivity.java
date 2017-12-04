@@ -23,7 +23,7 @@ public class NotificationActivity extends BroadcastReceiver{
 
         NotificationCompat.Builder builder = new NotificationCompat.Builder(context)
                 .setContentIntent(pendingIntent)
-                .setSmallIcon(com.example.bohyun.fitime.R.drawable.ic_launcher)
+                .setSmallIcon(R.drawable.ic_launcher)
                 .setSound(notificationSound)
                 .setContentTitle("FitTime")
                 .setContentText("time to work out!")
