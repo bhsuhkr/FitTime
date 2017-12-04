@@ -6,7 +6,7 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.Toast;
 
 
@@ -19,17 +19,17 @@ public class PlaylistFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.playlist_fragment, container, false);
 
-        Button recExercises = (Button) view.findViewById(R.id.recWorkouts);
-        recExercises.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Toast.makeText(getActivity(), "Add Exercise Clicked", Toast.LENGTH_SHORT).show();
-                Intent intentLoadNewActivity = new Intent(getActivity(), ViewRecWorkoutsActivity.class);
-                startActivity(intentLoadNewActivity);
-            }
-        });
+//        Button recExercises = (Button) view.findViewById(R.id.recWorkouts);
+//        recExercises.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Toast.makeText(getActivity(), "Add Exercise Clicked", Toast.LENGTH_SHORT).show();
+//                Intent intentLoadNewActivity = new Intent(getActivity(), ViewRecWorkoutsActivity.class);
+//                startActivity(intentLoadNewActivity);
+//            }
+//        });
 
-        Button myExercises = (Button) view.findViewById(R.id.myWorkouts);
+        ImageButton myExercises = (ImageButton) view.findViewById(R.id.myWorkouts);
         myExercises.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

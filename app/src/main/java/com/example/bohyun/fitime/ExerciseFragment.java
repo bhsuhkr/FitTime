@@ -6,7 +6,7 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.Toast;
 
 public class ExerciseFragment extends Fragment {
@@ -18,17 +18,17 @@ public class ExerciseFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.exercise_fragment, container, false);
 
-        Button recExercises = (Button) view.findViewById(R.id.recExercises);
+        ImageButton recExercises = (ImageButton) view.findViewById(R.id.recExercises);
         recExercises.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Toast.makeText(getActivity(), "Add Exercise Clicked", Toast.LENGTH_SHORT).show();
-                Intent intentLoadNewActivity = new Intent(getActivity(), ViewRecExercisesActivity.class);
+                Intent intentLoadNewActivity    = new Intent(getActivity(), ViewRecExercisesActivity.class);
                 startActivity(intentLoadNewActivity);
             }
         });
 
-        Button myExercises = (Button) view.findViewById(R.id.myExercises);
+        ImageButton myExercises = (ImageButton) view.findViewById(R.id.myExercises);
         myExercises.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

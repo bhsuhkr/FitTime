@@ -7,15 +7,31 @@
     android:orientation="vertical"
     tools:context="com.example.bohyun.fitime.MainActivity">
 
-    <Button
-        android:id="@+id/myWorkouts"
+    <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="152dp"
-        android:text="My Workouts" />
+        android:layout_height="wrap_content">
+        <ImageButton
+            android:id="@+id/myWorkouts"
+            android:src="@drawable/workout"
+            android:layout_width="match_parent"
+            android:scaleType="fitXY"
+            android:adjustViewBounds="true"
+            android:layout_height="200dp"
+            android:background="@null"
+            android:text="Recommended Exercises" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="My Workout"
+            android:textSize="40dp"
+            android:textStyle="italic"
+            android:paddingLeft="7dp"
+            android:textColor="#ffffff"/>
+    </FrameLayout>
 
-    <Button
-        android:id="@+id/recWorkouts"
-        android:layout_width="match_parent"
-        android:layout_height="157dp"
-        android:text="Recommended Workouts" />
+    <!--<Button-->
+        <!--android:id="@+id/recWorkouts"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="157dp"-->
+        <!--android:text="Recommended Workouts" />-->
 </LinearLayout>
