@@ -34,9 +34,10 @@
         <activity android:name=".FullScheduleActivity"/>
         <activity android:name=".ListOfVideosActivity"/>
         <activity android:name=".ViewRecExercisesActivity"/>
-        <!--<activity android:name=".ViewMyExercisesActivity"/>-->
-        <!--<activity android:name=".ViewExerciseActivity"/>-->
-        <!--<activity android:name=".AddExerciseActivity"/>-->
+        <activity android:name=".ViewRecExerciseActivity"/>
+        <activity android:name=".ViewMyExercisesActivity"/>
+        <activity android:name=".ViewExerciseActivity"/>
+        <activity android:name=".AddExerciseActivity"/>
         <activity android:name=".ViewRecWorkoutsActivity"/>
         <activity android:name=".ViewMyWorkoutsActivity"/>
         <activity android:name=".ViewWorkoutActivity"/>

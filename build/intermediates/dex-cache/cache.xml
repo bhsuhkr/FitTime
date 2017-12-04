@@ -3,21 +3,21 @@
 
     <item
         is-multidex="true"
-        jar="C:\Project\login\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jar="C:\Users\Panaru\Documents\White Fairy\Projects\ExerFinal\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="4ffc5d689a362a6cd4284326f42338f7d69a40ad">
-        <dex dex="C:\Project\login\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_7f43536f1a4388bf1029871ccfaa2bd227ea0e95\classes.dex" />
+        sha1="ae0971b3a4e9b53d88be66a2c72e0f18780cb4f8">
+        <dex dex="C:\Users\Panaru\Documents\White Fairy\Projects\ExerFinal\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_51117296950fcd26d77c82d88d25efab19c0187e\classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="C:\Project\login\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jar="C:\Users\Panaru\Documents\White Fairy\Projects\ExerFinal\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
         sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
-        <dex dex="C:\Project\login\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_718761d03e40c61027feed436145676834c18804\classes.dex" />
+        <dex dex="C:\Users\Panaru\Documents\White Fairy\Projects\ExerFinal\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_993b8b2cadae8025dc6567d1119e4ae765d28387\classes.dex" />
     </item>
 
 </items>

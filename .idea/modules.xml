@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/ExerFinal.iml" filepath="$PROJECT_DIR$/ExerFinal.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/latest.iml" filepath="$PROJECT_DIR$/latest.iml" />
-      <module fileurl="file://C:\Users\Topa\Desktop\latest\login.iml" filepath="C:\Users\Topa\Desktop\latest\login.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../../../../Topa/Desktop/latest/login.iml" filepath="$PROJECT_DIR$/../../../../../Topa/Desktop/latest/login.iml" />
     </modules>
   </component>
 </project>
